@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="description" CONTENT="description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Title" />
+	<meta property="og:description" content="description" />
+	<meta property="og:image" content="=">
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<link rel="shortcut icon" href="" />
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">	
+<link rel="stylesheet" href="libs/mpopup/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+<header class="header">
+	<div class="overlay" id="overlay"></div>
+	<nav class="header__nav">
+		<div class="header__nav-title">
+			<h3>Лучшие скидки и акции на тысячи товаров</h3>
+		</div>
+		<!-- /.header__nav-title -->
+		<div class="header__nav-mobile">
+			<div class="header__nav-mobile-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->	
+			<div class="header__nav-mobile-btn">
+				<div class="header__nav-mobile-btn-wrap" id="btnOpen">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- /.header__nav-mobile-btn-wrap -->
+			</div>
+			<!-- /.header__nav-mobile-btn -->
+		</div>
+		<!-- /.header__nav-mobile -->
+		<div class="header__nav-cont global-cont" id="menuList">
+			<div class="header__nav-cont-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->
+			<div class="header__nav-cont-list">
+				<ul>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">Заказы</a></li>
+					<li><a href="#">Торги</a></li>
+					<li><a href="#">Сделки</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-list -->
+			<div class="header__nav-cont-calc">
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/metall.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор металла</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/logistic.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор логистики</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+			</div>
+			<!-- /.header__nav-cont-calc -->
+			<div class="header__nav-cont-user">
+				<div class="header__nav-cont-user-icon">
+					<img src="img/user.png" alt="User">
+				</div>
+				<!-- /.header__nav-cont-user-icon -->
+				<div class="header__nav-cont-user-desc">
+					<div class="header__nav-cont-user-desc-title">
+						<p>Поставщик<br><span>ООО "Северсталь"</span></p>
+					</div>
+					<!-- /.header__nav-cont-user-desc-title -->
+					<div class="header__nav-cont-user-desc-start">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+					</div>
+					<!-- /.header__nav-cont-user-desc-start -->
+				</div>
+				<!-- /.header__nav-cont-user-desc -->
+				<div class="header__nav-cont-user-arrow">
+					<a href="#"><img src="img/arrow-down.png" alt=""></a>
+				</div>
+				<!-- /.header__nav-cont-user-arrow -->
+			</div>
+			<!-- /.header__nav-cont-user -->
+			<div class="header__nav-cont-userinfo">
+				<ul>
+					<li><a href="#">Мой профиль</a></li>
+					<li><a href="#">Мои объявления</a></li>
+					<li><a href="#">Продлить подписку</a></li>
+					<li><a href="#">Сообщения</a><span>1</span></li>
+					<li><a href="#">Выход</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-userinfo -->
+			<div class="header__nav-cont-close" id="btnClose">
+				<span></span>
+				<span></span>
+			</div>
+			<!-- /.header__nav-cont-close -->
+		</div>
+		<!-- /.header__nav-cont -->
+	</nav>
+</header>
+
+<section class="searchs">
+	<div class="global-cont">
+		<div class="searchs__title">
+			<div class="searchs__title-cont cont01">
+				<div class="searchs__title-cont-img">
+					<img src="img/searchs01.png" alt="img">
+				</div>
+				<!-- /.searchs__title-cont-img -->
+				<div class="searchs__title-cont-subtitle">
+					<h4>изучайте</h4>
+				</div>
+				<!-- /.searchs__title-cont-subtitle -->
+				<div class="searchs__title-cont-desc">
+					<p>Выбирайте наиболее выгодное предложение среди всех объявлений</p>
+				</div>
+				<!-- /.searchs__title-cont-desc -->
+			</div>
+			<!-- /.searchs__title-cont -->
+			<div class="searchs__title-cont cont02">
+				<div class="searchs__title-cont-img">
+					<img src="img/searchs02.png" alt="img">
+				</div>
+				<!-- /.searchs__title-cont-img -->
+				<div class="searchs__title-cont-subtitle">
+					<h4>общайтесь</h4>
+				</div>
+				<!-- /.searchs__title-cont-subtitle -->
+				<div class="searchs__title-cont-desc">
+					<p>задавайте вопросы по объявлениям и условиям приобретения прямо на сайте</p>
+				</div>
+				<!-- /.searchs__title-cont-desc -->
+			</div>
+			<!-- /.searchs__title-cont -->
+			<div class="searchs__title-cont cont03">
+				<div class="searchs__title-cont-img">
+					<img src="img/searchs03.png" alt="img">
+				</div>
+				<!-- /.searchs__title-cont-img -->
+				<div class="searchs__title-cont-subtitle">
+					<h4>оплачивайте</h4>
+				</div>
+				<!-- /.searchs__title-cont-subtitle -->
+				<div class="searchs__title-cont-desc">
+					<p>оплачивайте заказы без рисков через безопасную сделку</p>
+				</div>
+				<!-- /.searchs__title-cont-desc -->
+			</div>
+			<!-- /.searchs__title-cont -->
+		</div>
+		<!-- /.searchs__title -->
+		<div class="searchs__offer">
+			<div class="searchs__offer-title">
+				<h3>заявка</h3>
+			</div>
+			<!-- /.searchs__offer-title -->
+			<div class="searchs__offer-lists searchs__offer-liststwo">
+				<div class="searchs__offer-lists-main">
+					<ul>
+						<li>
+							<h5>Заказ</h5>
+							<p>Арматура</p>
+						</li>
+						<li>
+							<h5>Разразмещено</h5>
+							<p>10.08.2020</p>
+						</li>
+						<li>
+							<h5>обновлено:</h5>
+							<p>01.09.2020</p>
+						</li>
+					</ul>
+				</div>
+        <!-- /.searchs__offer-lists-main -->
+        <div class="searchs__offer-lists-second">
+          <p>заявка</p>
+          <h4>Труба ВГП ДУ 15 (1/2 дюйма) имеет наружный диаметр 21,3 мм</h4>
+          <h4>Труба ВГП ДУ 20 (3/4 дюйма) наружный диаметр 26,8 мм</h4>
+          <h4>Труба ВГП ДУ 25 (1 дюйм) наружный диаметр 33,5 мм</h4>
+          <h4>Труба ВГП ДУ 32 (1 1/4 дюйма) наружный диаметр 42,3 мм</h4>
+          <h4>Труба ВГП ДУ 40 (1 1/2 дюйма) наружный диаметр 48 мм</h4>
+          <h4>Труба ВГП ДУ 50 (2 дюйма) наружный диаметр 60 мм</h4>
+          <p>Цена</p>
+          <h4>116000 ₽</h4>
+        </div>
+        <!-- /.searchs__offer-lists-second -->
+
+			</div>
+			<!-- /.searchs__offer-lists -->
+		</div>
+		<!-- /.searchs__offer -->
+		<div class="searchs__offer searchs__contact">
+			<div class="searchs__offer-title">
+				<h3>общайтесь</h3>
+			</div>
+			<!-- /.searchs__offer-title -->
+			<div class="searchs__offer-lists">
+				<div class="searchs__offer-lists-main">
+					<ul>
+						<li>
+							<h5>город</h5>
+							<p>Москва</p>
+						</li>
+						<li>
+							<h5>Поставщик</h5>
+							<p>ООО “Северсталь”</p>
+						</li>
+						<li>
+							<h5>Телефон</h5>
+							<p>+7 (809) 303-48-34</p>
+						</li>
+						<li>
+							<h5>E-MAIL</h5>
+							<p>severstal@mail.ru</p>
+						</li>
+						<li>
+							<h5>Рейтинг Поставщика</h5>
+							<p>
+								<img src="img/Star.svg" alt="star">
+								<img src="img/Star.svg" alt="star">
+								<img src="img/Star.svg" alt="star">
+								<img src="img/Star.svg" alt="star">
+								<img src="img/Star.svg" alt="star">
+							</p>
+						</li>
+					</ul>
+				</div>
+				<!-- /.searchs__offer-lists-main -->
+			</div>
+			<!-- /.searchs__offer-lists -->
+			<div class="searchs__offer-msg">
+				<form>
+					<textarea name="msg" rows="5" placeholder="Напишите вопрос или отправьте предложение поставщику "></textarea>
+					<div class="searchs__offer-msg-btn">
+						<label for="fin"><img style="max-width: 11px" src="img/pr.png" alt="pr">прикрепить файл</label>
+						<input id="fin" type="file" name="file">
+						<button href="#">отправить</button>
+					</div>
+					<!-- /.searchs__offer-msg-btn -->
+				</form>
+			</div>
+			<!-- /.searchs__offer-msg -->
+		</div>
+		<!-- /.searchs__offer -->
+		<div class="searchs__pay">
+			<div class="searchs__pay-title">
+				<h3>Оплачивайте</h3>
+			</div>
+			<!-- /.searchs__pay-title -->
+			<div class="searchs__pay-desc">
+				<p>Безопасная сделка — это удобный способ работы с заказами. До завершения сделки деньги резервируются на карте заказчика, а когда заказ успешно доставлен, поставщик получает оплату. Если что-то пойдет не так, мы поможем разрешить спор.</p>
+			</div>
+			<!-- /.searchs__pay-desc -->
+			<div class="searchs__pay-btn">
+				<a href="#0">создать сделку</a>
+			</div>
+			<!-- /.searchs__pay-btn -->
+			<div class="mydeal__banner">
+				<img src="img/bannerMyDeal.png" alt="Новая сделка">
+			</div>
+			<!-- /.mydeal__banner -->
+		</div>
+		<!-- /.searchs__pay -->
+	</div>
+	<!-- /.global-cont -->
+</section>
+
+
+<footer class="footer">
+	<div class="footer__cont global-cont">
+		<div class="footer__cont-list">
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">заказы</a></li>
+					<li><a href="#">Торги</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+			<div class="footer__cont-list-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.footer__cont-list-logo -->
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Сделки</a></li>
+					<li><a href="#">Тарифы</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+		</div>
+		<!-- /.footer__cont-list -->
+		<div class="footer__cont-social">
+			<a href="#"><img src="img/logo_instagram.png" alt=""></a>
+			<a href="#"><img src="img/logo_vk.png" alt=""></a>
+			<a href="#"><img src="img/logo_youtube1.png" alt=""></a>
+		</div>
+		<!-- /.footer__cont-social -->
+	</div>
+	<!-- /.footer__cont -->
+	<div class="footer__bankIcon">
+		<a href="#"><img class="visa" src="img/visa.png" alt=""></a>
+		<a href="#"><img class="mastercard" src="img/mastercard.png" alt=""></a>
+		<a href="#"><img class="tinkoff" src="img/Tinkoff.png" alt=""></a>
+	</div>
+	<!-- /.footer__bankIcon -->
+	<div class="footer__copyright">
+		<ul>
+			<li>© 2020 Все права защищены</li>
+			<li><a href="#">Публичная оферта</a></li>
+			<li><a href="#">Правила пользования</a></li>
+			<li><a href="#">ООО "PMP Tech" ИНН 2048290</a></li>
+		</ul>
+	</div>
+	<!-- /.footer__copyright -->
+</footer>
+
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/mpopup/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

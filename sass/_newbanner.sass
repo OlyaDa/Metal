@@ -1,0 +1,65 @@
+.new-banner
+  margin-bottom: 20px
+  margin-bottom: -5px
+  &-cont
+    background: $main_rgb
+    border: 1px solid $main_color
+    border-radius: $br-radius
+    display: flex
+    justify-content: space-around
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      top: 10%
+      left: 50%
+      width: 1px
+      height: 80%
+      background: $main_color
+    &-item
+      flex-basis: 48%
+      display: flex
+      justify-content: center
+      align-items: center
+      &-icon
+        flex-grow: 1
+        padding: 5px
+      &-text
+        flex-grow: 1
+        padding: 10px 5px
+        p
+          font-size: 12px
+          padding: 0
+          margin: 0
+      &-img
+        flex-grow: 1
+        padding: 5px
+        img
+          width: 150px
+  @media(max-width: 992px)
+    &-cont
+      flex-wrap: wrap
+      &:after
+        display: none
+      &-item
+        flex-basis: 100%
+        margin-bottom: 10px
+        flex-wrap: wrap
+        &-icon
+          img
+            display: block
+            margin-left: auto
+            margin-right: auto
+        &-img
+          flex-basis: 100%
+          img
+            width: 100%
+.oldBanner
+  margin-bottom: 20px
+  img
+    width: 100%
+
+.banner-image
+  max-width: 150px
+  @media(max-width: 992px)
+    max-width: 100%

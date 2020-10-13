@@ -1,0 +1,521 @@
+.create-deal
+  //padding: 20px 0
+  &-cont
+    background: $main_bg3
+    border-radius: $br-radius
+    padding-bottom: 20px
+    &-head
+      background: #000
+      padding: 5px
+      border-left: 5px solid $main_rgb
+      border-top-left-radius: $br-radius
+      border-top-right-radius: $br-radius
+      margin-bottom: 20px
+      margin-top: 20px
+      p
+        padding: 0
+        margin: 0
+        font-size: 16px
+        color: $main_rgb
+        text-transform: uppercase
+    &-wrap
+      display: flex
+      justify-content: space-around
+      min-height: 350px
+      &-steps.orderuser
+        h4
+          font-size: 16px
+        p
+          font-size: 12px
+          margin: 0
+      &-steps
+        flex-basis: 30%
+        display: flex
+        flex-direction: column
+        //align-items: center
+        &-mymsg
+          &-item
+            border: 1px solid $main_color
+            background: $main_white
+            padding: 10px 20px
+            border-radius: $br-radius
+            position: relative
+            margin-bottom: 10px
+            h5
+              font-size: 16px
+              padding: 0
+              margin: 0
+            p
+              margin: 0
+              padding: 0 
+            hr
+              margin: 5px auto
+            &-count
+              position: absolute
+              top: -5px
+              right: -5px
+              background: $main_rgb
+              width: 25px
+              height: 25px
+              border: 1px solid $main_color
+              display: flex
+              justify-content: center
+              align-items: center
+              border-radius: 100%
+          .mymsg-item-active
+            border: 1px solid $main_rgb
+        img
+          width: 80%
+          display: block
+          margin-left: auto
+          margin-right: auto
+        .steps-item-active
+          span
+            background: $main_rgb
+        .steps-item-end
+          span
+            background: $main_rgb
+            color: $main_color
+        &-last
+          &:after
+            display: none
+        &-item
+          display: flex
+          align-items: center
+          width: 250px
+          margin-bottom: 20px
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            bottom: -15px
+            left: 20px
+            width: 1px  
+            height: 10px
+            background: $main_color
+          &-number
+            margin-right: 5px
+            span
+              display: flex
+              width: 40px
+              height: 40px
+              background: $main_bgD
+              display: flex
+              justify-content: center
+              align-items: center
+              border-radius: 100%
+              color: $main_white
+          &-text
+            p
+              color: $main_bg
+              margin: 0
+              padding: 0
+      &-main
+        flex-basis: 63%
+        position: relative
+        form
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          height: 100%
+        .main-it-active
+          position: relative
+          opacity: 1
+          transition: .3s
+          z-index: 99
+        &-it
+          opacity: 0
+          transition: .3s
+          position: absolute
+          top: 0
+          left: 0
+          margin-bottom: 20px
+          &-showMap
+            display: inline-block
+            margin: 10px 0
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            padding: 10px
+            margin-bottom: 5px
+            border-radius: $br-radius
+            border: 1px solid $main_color
+            background: $main_white
+            font-size: 12px
+            cursor: pointer
+            img
+              margin-right: 5px
+              //height: 50%
+              //width: auto
+          &-tarrif
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid $main_color
+            border-radius: $br-radius
+            margin-bottom: 10px
+            background: $main_white
+            h4
+              white-space: nowrap
+              margin: 0
+              padding: 0
+              font-size: 16px
+              background: $main_color
+              color: $main_rgb
+              padding: 10px
+            p
+              margin: 0 !important
+              padding: 0
+            span
+              white-space: nowrap
+              padding: 10px 20px
+              border-left: 1px solid $main_color
+          &-active
+            border: 2px solid $main_rgb
+          &-star
+            position: relative
+            &-sneed
+              position: absolute
+              left: -15px
+              top: 45%
+              transform: translateY(-50%)
+              width: 8px
+            &-morIn
+              position: absolute
+              right: -35px
+              top: 50%
+              transform: translateY(-50%)
+          select
+            width: 100%
+            padding: 5px
+            border-radius: $br-radius
+            word-break: break-all
+            word-wrap: inherit
+            option
+              max-width: 100%
+              word-break: break-all
+              word-wrap: inherit
+          &-radio
+            input, label
+              cursor: pointer
+          p
+            margin: 0 0 10px 0
+            padding: 0
+            font-size: 12px
+          h3
+            font-size: 14px
+            margin: 0 0 10px 0
+            padding: 0
+          input[type=text], input[type=number]
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            padding: 5px
+            width: 100% 
+            margin-bottom: 5px
+            border-radius: $br-radius
+            border: 1px solid $main_color
+            max-width: 100%
+          &-inc
+            input
+              max-width: 100%
+              display: none
+            label
+              border-radius: $br-radius
+              background: none
+              transition: .3s
+              cursor: pointer
+              margin: 5px
+              text-transform: uppercase
+              font-size: 12px
+              img
+                margin-right: 5px
+                max-width: 100%
+                height: auto
+              &:hover
+                background: none
+                transition: .3s
+          &-list
+            flex-basis: 50%
+            h5
+              margin: 0 0 5px 0
+              padding: 0
+              font-size: 14px
+            p
+              margin: 0 0 5px 0
+              padding: 0
+              font-size: 12px
+          &-total
+            flex-basis: 100%
+            ul
+              border-radius: $br-radius
+              border: 1px solid $main_color
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+              background: $main_white
+              display: flex
+              flex-direction: column
+              flex-wrap: wrap
+              list-style: none
+              padding: 5px
+              margin: 0
+              width: 100%
+              height: 130px
+              li
+                flex-basis: 30%
+                p
+                  font-size: 12px
+                  padding: 0
+                  margin: 0 0 5px 0
+                h5
+                  font-size: 14px
+                  padding: 0
+                  margin: 0 0 5px 0
+                img
+                  margin-left: 5px
+                  height: 20px
+                  width: auto
+        &-btn
+          z-index: 99
+          display: flex
+          justify-content: flex-end
+          button
+            margin: 5px
+            border: 1px solid $main_color
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            &:nth-child(2)
+              background: $main_rgb
+            &:hover
+              background: $main_bg3
+              color: $main_rgb
+        &-myprofile.myprofile-uslugi    
+          h4
+            font-size: 16px
+          p
+            font-size: 14px
+          img
+            width: 100%
+        &-myprofile.orderuser
+          input
+            border: 1px solid $main_color
+            border-radius: $br-radius
+            padding: 5px
+            width: 100%
+            margin-bottom: 10px
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+          textarea
+            width: 100%
+            padding: 5px
+            border: 1px solid $main_color
+            border-radius: $br-radius
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        &-myprofile
+          .mainBtnB
+            text-align: center
+            display: block
+            margin-top: 10px
+            padding: 5px 10px
+            margin-left: auto
+            width: 100px
+          select
+              border: 1px solid $main_color
+              border-radius: $br-radius
+              padding: 5px
+              width: 100%
+              margin-bottom: 10px
+          &-input
+            position: relative
+            label
+              display: block
+              font-size: 12px
+            input
+              border: 1px solid $main_color
+              border-radius: $br-radius
+              padding: 5px
+              width: 100%
+              margin-bottom: 10px
+            .myprofile-input-rub
+              position: absolute
+              right: -20px
+              top: 36%
+              transform: translateY(-50%)
+            &-wrap
+              position: relative
+              input
+                padding-left: 30px
+              .myprofile-editIn
+                cursor: pointer
+                z-index: 99
+                position: absolute
+                left: 5px
+                top: 38%
+                transform: translateY(-50%)
+                img
+                  width: 20px
+                  height: 20px
+              .myprofile-morIn
+                cursor: pointer
+                z-index: 99
+                position: absolute
+                right: -30px
+                top: 38%
+                transform: translateY(-50%)
+                img
+                  width: 25px
+                  height: 25px
+          &-downBtn
+            display: inline-block
+            margin: 10px 0
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            padding: 10px
+            margin-bottom: 5px
+            border-radius: $br-radius
+            border: 1px solid $main_color
+            background: $main_white
+            font-size: 12px
+            img
+              margin-right: 5px
+              height: 50%
+              width: auto    
+        &-chat
+          &-wrap
+            height: 350px
+            background: $main_white   
+            border-radius: $br-radius
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            margin-bottom: 10px
+            padding: 10px
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            &-date
+              text-align: center
+              margin-bottom: 10px
+              position: relative
+              overflow: hidden
+              span
+                display: inline-block
+                text-align: center
+                font-size: 12px
+                position: relative
+                &:after
+                  position: absolute
+                  content: ''
+                  top: 50%
+                  transform: translateY(-50%)
+                  right: -1005px
+                  width: 1000px
+                  height: 1px 
+                  background: $main_color
+                &:before
+                  position: absolute
+                  content: ''
+                  top: 50%
+                  transform: translateY(-50%)
+                  left: -1005px
+                  width: 1000px
+                  height: 1px 
+                  background: $main_color
+            &-msguser
+              background: $main_rgb
+              width: 60%
+              border: 1px solid $main_color
+              border-radius: $br-radius
+              padding: 5px
+              margin-bottom: 10px
+              p
+                margin: 0
+                padding: 0
+              span
+                font-size: 10px
+                width: 52px
+                display: block
+                margin-left: auto
+            &-msgP
+              text-align: right
+              margin-left: auto
+              background: $main_white
+              width: 60%
+              border: 1px solid $main_color
+              border-radius: $br-radius
+              padding: 5px
+              margin-bottom: 10px
+              p
+                margin: 0
+                padding: 0
+              &-date
+                text-align: left
+                span
+                  font-size: 10px
+                  width: 40px
+                  width: 30px
+                  display: block
+                  margin-right: auto
+          &-entermsg
+            input
+              border: 1px solid $main_color
+              width: 100%
+              background: $main_white   
+              border-radius: $br-radius
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+              margin-bottom: 10px
+              padding: 10px
+  .mydeal__banner
+    margin-top: 20px
+  @media(max-width: 992px) 
+    padding: 20px
+    &-cont
+      &-wrap
+        word-break: break-word
+        padding: 5px
+        flex-direction: column
+        min-height: auto
+        &-steps
+          flex-direction: row
+          flex-wrap: wrap
+          align-items: flex-start
+          &-mymsg
+            flex-basis: 50%
+            &-item
+              margin: 10px
+              h5
+                font-size: 14px
+              p
+                font-size: 12px
+          &-item
+            flex-basis: 25%
+            width: 25%
+            flex-direction: column
+            &:after
+              display: none
+            &-text
+              text-align: center
+              margin-top: 5px
+              font-size: 11px
+        &-main
+          &-myprofile
+            padding: 0 15px
+          &-it
+            &-tarrif
+              h4
+                white-space: nowrap
+                font-size: 12px
+                flex-grow: 1
+              p
+                text-align: center
+                flex-grow: 1
+              span
+                white-space: nowrap
+                flex-grow: 1
+                font-size: 12px
+        &-main-it-total
+          ul
+            height: auto
+            li
+              flex-basis: 100%
+              padding: 5px
+    .p-img-mobile
+      padding: 0 30px 0 18px
+
+.create-deal-cont-wrap-main-it-star-sneed-p
+  position: absolute
+  width: 8px
+  left: -15px
+  bottom: 8px
+  -webkit-transform: translateY(-50%)
+  transform: translateY(-50%)

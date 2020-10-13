@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="description" CONTENT="description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Title" />
+	<meta property="og:description" content="description" />
+	<meta property="og:image" content="=">
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<link rel="shortcut icon" href="" />
+
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">	
+  <link rel="stylesheet" href="libs/mpopup/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+<header class="header">
+	<div class="overlay" id="overlay"></div>
+	<nav class="header__nav">
+		<div class="header__nav-title">
+			<h3>Лучшие скидки и акции на тысячи товаров</h3>
+		</div>
+		<!-- /.header__nav-title -->
+		<div class="header__nav-mobile">
+			<div class="header__nav-mobile-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->	
+			<div class="header__nav-mobile-btn">
+				<div class="header__nav-mobile-btn-wrap" id="btnOpen">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- /.header__nav-mobile-btn-wrap -->
+			</div>
+			<!-- /.header__nav-mobile-btn -->
+		</div>
+		<!-- /.header__nav-mobile -->
+		<div class="header__nav-cont global-cont" id="menuList">
+			<div class="header__nav-cont-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->
+			<div class="header__nav-cont-list">
+				<ul>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">Заказы</a></li>
+					<li><a href="#">Торги</a></li>
+					<li><a href="#">Сделки</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-list -->
+			<div class="header__nav-cont-calc">
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/metall.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор металла</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/logistic.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор логистики</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+			</div>
+			<!-- /.header__nav-cont-calc -->
+			<div class="header__nav-cont-user">
+				<div class="header__nav-cont-user-icon">
+					<img src="img/user.png" alt="User">
+				</div>
+				<!-- /.header__nav-cont-user-icon -->
+				<div class="header__nav-cont-user-desc">
+					<div class="header__nav-cont-user-desc-title">
+						<p>Поставщик <br> ООО "Северсталь"</p>
+					</div>
+					<!-- /.header__nav-cont-user-desc-title -->
+					<div class="header__nav-cont-user-desc-start">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+					</div>
+					<!-- /.header__nav-cont-user-desc-start -->
+				</div>
+				<!-- /.header__nav-cont-user-desc -->
+				<div class="header__nav-cont-user-arrow">
+					<a href="#"><img src="img/arrow-down.png" alt=""></a>
+				</div>
+				<!-- /.header__nav-cont-user-arrow -->
+			</div>
+			<!-- /.header__nav-cont-user -->
+			<div class="header__nav-cont-userinfo">
+				<ul>
+					<li><a href="#">Мой профиль</a></li>
+					<li><a href="#">Мои объявления</a></li>
+					<li><a href="#">Продлить подписку</a></li>
+					<li><a href="#">Сообщения</a><span>1</span></li>
+					<li><a href="#">Выход</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-userinfo -->
+			<div class="header__nav-cont-close" id="btnClose">
+				<span></span>
+				<span></span>
+			</div>
+			<!-- /.header__nav-cont-close -->
+		</div>
+		<!-- /.header__nav-cont -->
+	</nav>
+</header>
+
+<section class="usermap">
+  <div class="global-cont usermap-cont">
+    <div class="usermap-cont-title">
+      <h2>карта пользователя</h2>
+    </div>
+    <!-- /.usermap-cont-title -->
+    <div class="usermap-cont-list">
+      <div class="usermap-cont-list-item">
+        <ul>
+          <li>
+            <p>Поставщик</p>
+            <h4>Торговое унитарное предприятие  “Северсталь”</h4>
+          </li>
+          <li>
+            <p>Ответственное лицо</p>
+            <h4>Иванов Иван Иванович</h4>
+          </li>
+          <li>
+            <p>инн</p>
+            <h4>3356843457</h4>
+          </li>
+          <li>
+            <p>город</p>
+            <h4>Москва</h4>
+          </li>
+          <li>
+            <p>Область</p>
+            <h4>Московская</h4>
+          </li>
+          <li>
+            <p>Адрес Офиса</p>
+            <h4>переулок. Краснознаменых 1 пом. 316</h4>
+          </li>
+          <li>
+            <p>Адрес склада</p>
+            <h4>переулок. Краснознаменых 1 пом. 316</h4>
+          </li>
+        </ul>
+      </div>
+      <!-- /.usermap-cont-list-item -->
+      <div class="usermap-cont-list-item">
+        <ul>
+          <li>
+            <p>Банковские реквизиты</p>
+            <h4>Р/с: BY38 ALFA 3012 2366 8500 1027 0000
+              БИК: ALFABY2X
+              ЗАО "Альфа-Банк" Юридический адрес: Ул. Сурганова, 43-47, 220013 Минск</h4>
+          </li>
+          <li>
+            <p>Контактные телефоны</p>
+            <h4>+7 (809) 303-48-34</h4>
+            <h4>+7 (809) 303-48-34</h4>
+          </li>
+          <li>
+            <p>Email</p>
+            <h4>severstal@mail.ru</h4>
+          </li>
+          <li>
+            <p>Сайт</p>
+            <h4><a href="www.severstal.ru">www.severstal.ru</a></h4>
+          </li>
+          <li>
+            <p>рейтинг на Metalgo</p>
+            <img src="img/StarBig.svg" alt="star">
+            <img src="img/StarBig.svg" alt="star">
+            <img src="img/StarBig.svg" alt="star">
+            <img src="img/StarBig.svg" alt="star">
+            <img src="img/StarBig.svg" alt="star">
+          </li>
+        </ul>
+      </div>
+      <!-- /.usermap-cont-list-item -->
+    </div>
+    <!-- /.usermap-cont-list -->
+    <div class="usermap-cont-btn">
+      <a href="#usercomplain" class="mainBtnB mpopup">Пожаловаться</a>
+    </div>
+    <!-- /.usermap-cont-btn -->
+    <div class="usermap-cont-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8353.598282699706!2d-0.12436245756402632!3d51.503315199453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2z0JHRg9C60ZbQvdCz0LXQvNGB0YzQutC40Lkg0L_QsNC70LDRhg!5e0!3m2!1suk!2sua!4v1600502510496!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!-- /.usermap-cont-map -->
+      <div class="gallery-slider popup-gallery">
+    <div class="usermap-cont-img">
+
+      <div class="usermap-cont-img-item">
+          <a href="img/usermapimg.svg"><img src="img/usermapimg.svg" alt=""> </a>
+      </div>
+      <!-- /.usermap-cont-img-item -->
+      <div class="usermap-cont-img-item">
+          <a href="img/usermapimg.svg"><img src="img/usermapimg.svg" alt=""> </a>
+      </div>
+      <!-- /.usermap-cont-img-item -->
+      <div class="usermap-cont-img-item">
+          <a href="img/usermapimg.svg"><img src="img/usermapimg.svg" alt=""> </a>
+      </div>
+      <!-- /.usermap-cont-img-item -->
+      <div class="usermap-cont-img-item">
+          <a href="img/usermapimg.svg"><img src="img/usermapimg.svg" alt=""> </a>
+      </div>
+      <!-- /.usermap-cont-img-item -->
+      <div class="usermap-cont-img-item">
+          <a href="img/usermapimg.svg"><img src="img/usermapimg.svg" alt=""> </a>
+      </div>
+      <!-- /.usermap-cont-img-item -->
+      <div class="usermap-cont-img-item">
+          <a href="img/usermapimg.svg"><img src="img/usermapimg.svg" alt=""> </a>
+      </div>
+      <!-- /.usermap-cont-img-item -->
+      <div class="usermap-cont-img-item">
+          <a href="img/usermapimg.svg"><img src="img/usermapimg.svg" alt=""> </a>
+      </div>
+      <!-- /.usermap-cont-img-item -->
+      <div class="usermap-cont-img-item">
+          <a href="img/usermapimg.svg"><img src="img/usermapimg.svg" alt=""> </a>
+      </div>
+      <!-- /.usermap-cont-img-item -->
+      <div class="usermap-cont-img-item">
+          <a href="img/usermapimg.svg"><img src="img/usermapimg.svg" alt=""> </a>
+      </div>
+      <!-- /.usermap-cont-img-item -->
+      <div class="usermap-cont-img-item">
+          <a href="img/usermapimg.svg"><img src="img/usermapimg.svg" alt=""> </a>
+      </div>
+        </div>
+      <!-- /.usermap-cont-img-item -->
+    </div>
+    <!-- /.usermap-cont-img -->
+    <div class="usermap-cont-rev">
+      <div class="usermap-cont-rev-msg">
+        <div class="usermap-cont-rev-msg-title">
+          <h4>отзывы о пользователе (<span>12</span>)</h4>
+        </div>
+        <!-- /.usermap-cont-rev-msg-title -->
+        <div class="usermap-cont-rev-msg-item">
+          <h5>Иванов Иван Иванович</h5>
+          <span>ООО “Северсталь”</span>
+          <p>Размер стола (мм) 2000Х3400.
+            Широчайший спектр обрабатываемых материалов - металлы, сплавы (в т.ч. высокопрочные), биметаллические пластины, гранит, керамика, пластик, ...
+            </p>
+        </div>
+        <!-- /.usermap-cont-rev-msg-item -->
+        <div class="usermap-cont-rev-msg-item">
+          <h5>Иванов Иван Иванович</h5>
+          <span>ООО “Северсталь”</span>
+          <p>Размер стола (мм) 2000Х3400.
+            Широчайший спектр обрабатываемых материалов - металлы, сплавы (в т.ч. высокопрочные), биметаллические пластины, гранит, керамика, пластик, ...
+            </p>
+        </div>
+        <!-- /.usermap-cont-rev-msg-item -->
+        <span class="usermap-cont-rev-msg-more">Еще ...</span>
+        <div class="usermap-cont-rev-msg-text">
+          <form>
+            <textarea name="text-msg" rows="5" placeholder="Оставьте отзыв о пользователе"></textarea>
+            <button class="mainBtnB">Отправить</button>
+          </form>
+        </div>
+        <!-- /.usermap-cont-rev-msg-text -->
+      </div>
+      <!-- /.usermap-cont-rev-msg -->
+      <div class="usermap-cont-rev-stars">
+        <h4>оцените пользователя</h4>
+        <img src="img/starBh.svg" alt="star">
+        <img src="img/starBh.svg" alt="star">
+        <img src="img/starBh.svg" alt="star">
+        <img src="img/starBh.svg" alt="star">
+        <img src="img/starBh.svg" alt="star">
+      </div>
+      <!-- /.usermap-cont-rev-stars -->
+    </div>
+    <!-- /.usermap-cont-rev -->
+  </div>
+</section>
+
+
+
+<div class="mpopup-window mfp-hide white-popup-block" id="usercomplain">
+  <div class="mpopup-window-header">
+    <p>Пожаловаться на пользователя</p>
+    <span class="mpopup-window-header-close popup-close"></span>
+  </div>
+  <!-- /.mpopup-window-header -->
+  <div class="mpopup-window-main">
+    <form>
+      <textarea name="mpopupMsg" rows="5" placeholder="Напишите о причине жалобы"></textarea>
+      <div class="mpopup-window-main-btn">
+        <button class="mainBtn sentTest">отправить</button>
+      </div>
+      <!-- /.mpopup-window-main-btn -->
+    </form>
+  </div>
+  <!-- /.mpopup-window-main -->
+</div>
+<!-- /.mpopup-window -->
+<div class="mpopup-window mfp-hide white-popup-block mpopup-window-border" id="complainsend">
+  <div class="mpopup-window-main">
+    <span class="mpopup-window-header-close popup-close"></span>
+    <h4>Жалоба отправлена</h4>
+    <hr>
+    <h5>Спасибо, что делаете платформу MetalGO еще лучше</h5>
+  </div>
+  <!-- /.mpopup-window-main -->
+</div>
+<!-- /.mpopup-window -->
+
+<footer class="footer">
+	<div class="footer__cont global-cont">
+		<div class="footer__cont-list">
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">заказы</a></li>
+					<li><a href="#">Торги</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+			<div class="footer__cont-list-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.footer__cont-list-logo -->
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Сделки</a></li>
+					<li><a href="#">Тарифы</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+		</div>
+		<!-- /.footer__cont-list -->
+		<div class="footer__cont-social">
+            <a href="#"><img src="img/logo_instagram.png" alt=""></a>
+            <a href="#"><img src="img/logo_vk.png" alt=""></a>
+            <a href="#"><img src="img/logo_youtube1.png" alt=""></a>
+		</div>
+		<!-- /.footer__cont-social -->
+	</div>
+	<!-- /.footer__cont -->
+	<div class="footer__bankIcon">
+        <a href="#"><img class="visa" src="img/visa.png" alt=""></a>
+        <a href="#"><img class="mastercard" src="img/mastercard.png" alt=""></a>
+        <a href="#"><img class="tinkoff" src="img/Tinkoff.png" alt=""></a>
+	</div>
+	<!-- /.footer__bankIcon -->
+	<div class="footer__copyright">
+		<ul>
+			<li>© 2020 Все права защищены</li>
+			<li><a href="#">Публичная оферта</a></li>
+			<li><a href="#">Правила пользования</a></li>
+			<li><a href="#">ООО "PMP Tech" ИНН 2048290</a></li>
+		</ul>
+	</div>
+	<!-- /.footer__copyright -->
+</footer>
+
+  <script src="libs/jquery-3.4.1.min.js"></script>
+  <script src="libs/bootstrap/bootstrap.min.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/mpopup/jquery.magnific-popup.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

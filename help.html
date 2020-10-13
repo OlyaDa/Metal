@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="description" CONTENT="description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Title" />
+	<meta property="og:description" content="description" />
+	<meta property="og:image" content="=">
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<link rel="shortcut icon" href="" />
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">	
+	<link rel="stylesheet" href="libs/mpopup/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+<header class="header">
+	<div class="overlay" id="overlay"></div>
+	<nav class="header__nav">
+		<div class="header__nav-title">
+			<h3>Лучшие скидки и акции на тысячи товаров</h3>
+		</div>
+		<!-- /.header__nav-title -->
+		<div class="header__nav-mobile">
+			<div class="header__nav-mobile-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->	
+			<div class="header__nav-mobile-btn">
+				<div class="header__nav-mobile-btn-wrap" id="btnOpen">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- /.header__nav-mobile-btn-wrap -->
+			</div>
+			<!-- /.header__nav-mobile-btn -->
+		</div>
+		<!-- /.header__nav-mobile -->
+		<div class="header__nav-cont global-cont" id="menuList">
+			<div class="header__nav-cont-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->
+			<div class="header__nav-cont-list">
+				<ul>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">Заказы</a></li>
+					<li><a href="#">Торги</a></li>
+					<li><a href="#">Сделки</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-list -->
+			<div class="header__nav-cont-calc">
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/metall.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор металла</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/logistic.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор логистики</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+			</div>
+			<!-- /.header__nav-cont-calc -->
+			<div class="header__nav-cont-user">
+				<div class="header__nav-cont-user-icon">
+					<img src="img/user.png" alt="User">
+				</div>
+				<!-- /.header__nav-cont-user-icon -->
+				<div class="header__nav-cont-user-desc">
+					<div class="header__nav-cont-user-desc-title">
+						<p>Поставщик<br><span>ООО "Северсталь"</span></p>
+					</div>
+					<!-- /.header__nav-cont-user-desc-title -->
+					<div class="header__nav-cont-user-desc-start">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+					</div>
+					<!-- /.header__nav-cont-user-desc-start -->
+				</div>
+				<!-- /.header__nav-cont-user-desc -->
+				<div class="header__nav-cont-user-arrow">
+					<a href="#"><img src="img/arrow-down.png" alt=""></a>
+				</div>
+				<!-- /.header__nav-cont-user-arrow -->
+			</div>
+			<!-- /.header__nav-cont-user -->
+			<div class="header__nav-cont-userinfo">
+				<ul>
+					<li><a href="#">Мой профиль</a></li>
+					<li><a href="#">Мои объявления</a></li>
+					<li><a href="#">Продлить подписку</a></li>
+					<li><a href="#">Сообщения</a><span>1</span></li>
+					<li><a href="#">Выход</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-userinfo -->
+			<div class="header__nav-cont-close" id="btnClose">
+				<span></span>
+				<span></span>
+			</div>
+			<!-- /.header__nav-cont-close -->
+		</div>
+		<!-- /.header__nav-cont -->
+	</nav>
+</header>
+<section class="help">
+  <div class="help-cont global-cont">
+    <div class="help-cont-head">
+      <p>Тарифы</p>
+    </div>
+    <!-- /.help-cont-head -->
+    <div class="help-cont-tabs-list tabs-list">
+      <ul>
+        <li>Помощь</li>
+        <li>разместить объявление</li>
+      </ul>
+    </div>
+    <!-- /.help-cont-titleList -->
+    <div class="help-cont-tabs">
+      <div class="help-cont-tabs-wrap tabs-cont">
+        <div class="contacts-cont-wrap">
+          <div class="contacts-cont-wrap-item">
+            <h3>Часто задаваемые вопросы</h3>
+            <div class="help-cont-qv">
+              <div class="help-cont-qv-items">
+                <div class="help-cont-qv-items-icon">
+                  <img src="img/qvup.svg" alt="">
+                </div>
+                <!-- /.help-cont-qv-items-icon -->
+                <h4>Как подобрать близкую марку?</h4>
+                <p>Как грамотно составить рекламный текст частного объявления в Ровно? Ничего сверхсложного в этом нет, в каждом варианте подачи будет предложено заполнить определенную форму, где необходимо будет внести нужные параметры. С этим сможет справиться даже ребенок. Сам текст рекламного предложения можно составить следующим образом. Допустим, решено продать автомобиль, какой же текст в этом случае написать?</p>
+              </div>
+              <!-- /.help-cont-qv-items -->
+              <div class="help-cont-qv-items">
+                <div class="help-cont-qv-items-icon">
+                  <img src="img/qvdown.svg" alt="">
+                </div>
+                <!-- /.help-cont-qv-items-icon -->
+                <h4>Как использовать поиск?</h4>
+              </div>
+              <!-- /.help-cont-qv-items -->
+              <div class="help-cont-qv-items">
+                <div class="help-cont-qv-items-icon">
+                  <img src="img/qvdown.svg" alt="">
+                </div>
+                <!-- /.help-cont-qv-items-icon -->
+                <h4>Как найти круг?</h4>
+              </div>
+              <!-- /.help-cont-qv-items -->
+              <div class="help-cont-qv-items">
+                <div class="help-cont-qv-items-icon">
+                  <img src="img/qvdown.svg" alt="">
+                </div>
+                <!-- /.help-cont-qv-items-icon -->
+                <h4>Как пользоваться фильтром?</h4>
+              </div>
+              <!-- /.help-cont-qv-items -->
+              <div class="help-cont-qv-items">
+                <div class="help-cont-qv-items-icon">
+                  <img src="img/qvdown.svg" alt="">
+                </div>
+                <!-- /.help-cont-qv-items-icon -->
+                <h4>Как разместить объявления?</h4>
+              </div>
+              <!-- /.help-cont-qv-items -->
+              <div class="help-cont-qv-items">
+                <div class="help-cont-qv-items-icon">
+                  <img src="img/qvdown.svg" alt="">
+                </div>
+                <!-- /.help-cont-qv-items-icon -->
+                <h4>Как разместить заявку?</h4>
+              </div>
+              <!-- /.help-cont-qv-items -->
+              <div class="help-cont-qv-items">
+                <div class="help-cont-qv-items-icon">
+                  <img src="img/qvdown.svg" alt="">
+                </div>
+                <!-- /.help-cont-qv-items-icon -->
+                <h4>Как поднять объявления в топ?</h4>
+              </div>
+              <!-- /.help-cont-qv-items -->
+              <div class="help-cont-qv-items">
+                <div class="help-cont-qv-items-icon">
+                  <img src="img/qvdown.svg" alt="">
+                </div>
+                <!-- /.help-cont-qv-items-icon -->
+                <h4>Как выделить объявления?</h4>
+              </div>
+              <!-- /.help-cont-qv-items -->
+              <div class="help-cont-qv-items">
+                <div class="help-cont-qv-items-icon">
+                  <img src="img/qvdown.svg" alt="">
+                </div>
+                <!-- /.help-cont-qv-items-icon -->
+                <h4>Как подать завку на размещения объявления?</h4>
+              </div>
+              <!-- /.help-cont-qv-items -->
+              <div class="help-cont-qv-items">
+                <div class="help-cont-qv-items-icon">
+                  <img src="img/qvdown.svg" alt="">
+                </div>
+                <!-- /.help-cont-qv-items-icon -->
+                <h4>Как найти нужный тендер?</h4>
+              </div>
+              <!-- /.help-cont-qv-items -->
+              <div class="help-cont-qv-items">
+                <div class="help-cont-qv-items-icon">
+                  <img src="img/qvdown.svg" alt="">
+                </div>
+                <!-- /.help-cont-qv-items-icon -->
+                <h4>Как обновлять объявления?</h4>
+              </div>
+              <!-- /.help-cont-qv-items -->
+            </div>
+            <!-- /.help-cont-qv -->
+          </div>
+          <!-- /.contacts-cont-wrap-item -->
+          <div class="contacts-cont-wrap-item">
+            <h3>Задайте интересующий вопрос нашему менеджеру</h3>
+            <div class="contacts-cont-wrap-item-input">
+              <span>Ваша электронная почта</span>
+              <input type="text" name="Ваша электронная почта" placeholder="Ваша электронная почта">
+              <span>Ваше сообщение</span>
+              <textarea name="Ваше сообщение" rows="10" placeholder="Задайте вопрос"></textarea>
+              <button class="mainBtnB">Отправить</button>
+            </div>
+            <!-- /.contacts-cont-wrap-item-input -->
+            <div class="help-cont-wrap-item-video">
+              <h4>Видео-инструкции</h4>
+              <div class="help-cont-wrap-item-video-play">
+                <div class="help-cont-wrap-item-video-play-img">
+                  <img src="img/video.svg" alt="v">
+                  <p>Как использовать поиск?</p>
+                </div>
+                <!-- /.help-cont-wrap-item-video-play-img -->
+                <div class="help-cont-wrap-item-video-play-img">
+                  <img src="img/video.svg" alt="v">
+                  <p>Как использовать поиск?</p>
+                </div>
+                <!-- /.help-cont-wrap-item-video-play-img -->
+                <div class="help-cont-wrap-item-video-play-img">
+                  <img src="img/video.svg" alt="v">
+                  <p>Как использовать поиск?</p>
+                </div>
+                <!-- /.help-cont-wrap-item-video-play-img -->
+                <div class="help-cont-wrap-item-video-play-img">
+                  <img src="img/video.svg" alt="v">
+                  <p>Как использовать поиск?</p>
+                </div>
+                <!-- /.help-cont-wrap-item-video-play-img -->
+                <div class="help-cont-wrap-item-video-play-img">
+                  <img src="img/video.svg" alt="v">
+                  <p>Как использовать поиск?</p>
+                </div>
+                <!-- /.help-cont-wrap-item-video-play-img -->
+                <div class="help-cont-wrap-item-video-play-img">
+                  <img src="img/video.svg" alt="v">
+                  <p>Как использовать поиск?</p>
+                </div>
+                <!-- /.help-cont-wrap-item-video-play-img -->
+                <div class="help-cont-wrap-item-video-play-img">
+                  <img src="img/video.svg" alt="v">
+                  <p>Как использовать поиск?</p>
+                </div>
+                <!-- /.help-cont-wrap-item-video-play-img -->
+                <div class="help-cont-wrap-item-video-play-img">
+                  <img src="img/video.svg" alt="v">
+                  <p>Как использовать поиск?</p>
+                </div>
+                <!-- /.help-cont-wrap-item-video-play-img -->
+                <div class="help-cont-wrap-item-video-play-img">
+                  <img src="img/video.svg" alt="v">
+                  <p>Как использовать поиск?</p>
+                </div>
+                <!-- /.help-cont-wrap-item-video-play-img -->
+              </div>
+              <!-- /.help-cont-wrap-item-video-play -->
+            </div>
+            <!-- /.help-cont-wrap-item-video -->
+          </div>
+          <!-- /.help-cont-wrap-item -->
+        </div>
+        <!-- /.help-cont-wrap -->       
+      </div>
+      <!-- /.help-cont-tabs -->
+      <div class="help-cont-tabs-wrap tabs-cont">
+        <div class="help-cont-tabs-wrap-orderIn">
+          <h4>Авторизуйтесь, чтобы оставить заявку</h4>
+          <h4>Оставьте свою заявку, наш менеджер опубликует его</h4>
+          <p>Ваше сообщение или заявка</p>
+          <textarea rows="10" placeholder="Напишите сообщение и прикрепите файл с заказом"></textarea>
+          <div class="searchs__offer-msg">
+            <form>
+              <div class="searchs__offer-msg-btn">
+                <label for="fin"><img src="img/pr.png" alt="pr">прикрепить файл</label>
+                <input id="fin" type="file" name="file">
+                <button href="#">отправить</button>
+              </div>
+              <!-- /.searchs__offer-msg-btn -->
+            </form>
+          </div>
+          <!-- /.searchs__offer-msg -->
+        </div>
+        <!-- /.help-cont-tabs-wrap-orderIn -->
+
+      </div>
+      <!-- /.help-cont-tabs -->
+    </div>
+    <!-- /.help-cont-tabs -->
+  </div>
+  <!-- /.help-cont -->
+</section>
+<section class="oldBanner">
+  <div class="global-cont">
+    <img src="img/bannerMyDeal.png" alt="">
+  </div>
+  <!-- /.global-cont -->
+</section>
+
+<footer class="footer">
+	<div class="footer__cont global-cont">
+		<div class="footer__cont-list">
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">заказы</a></li>
+					<li><a href="#">Торги</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+			<div class="footer__cont-list-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.footer__cont-list-logo -->
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Сделки</a></li>
+					<li><a href="#">Тарифы</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+		</div>
+		<!-- /.footer__cont-list -->
+		<div class="footer__cont-social">
+            <a href="#"><img src="img/logo_instagram.png" alt=""></a>
+            <a href="#"><img src="img/logo_vk.png" alt=""></a>
+            <a href="#"><img src="img/logo_youtube1.png" alt=""></a>
+		</div>
+		<!-- /.footer__cont-social -->
+	</div>
+	<!-- /.footer__cont -->
+	<div class="footer__bankIcon">
+        <a href="#"><img class="visa" src="img/visa.png" alt=""></a>
+        <a href="#"><img class="mastercard" src="img/mastercard.png" alt=""></a>
+        <a href="#"><img class="tinkoff" src="img/Tinkoff.png" alt=""></a>
+	</div>
+	<!-- /.footer__bankIcon -->
+	<div class="footer__copyright">
+		<ul>
+			<li>© 2020 Все права защищены</li>
+			<li><a href="#">Публичная оферта</a></li>
+			<li><a href="#">Правила пользования</a></li>
+			<li><a href="#">ООО "PMP Tech" ИНН 2048290</a></li>
+		</ul>
+	</div>
+	<!-- /.footer__copyright -->
+</footer>
+
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/mpopup/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

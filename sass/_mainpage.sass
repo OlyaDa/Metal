@@ -1,0 +1,281 @@
+.lupa
+  max-width: 24px
+
+.visa
+  max-width: 21px
+
+.mastercard
+  max-width: 24px
+
+.tinkoff
+  max-width: 65px
+
+.how01
+  max-width: 139px
+
+.how02
+  max-width: 187px
+
+.how03
+  max-width: 216px
+
+.come-in
+  border: 1px solid #EDB021
+  padding: 8px 19px
+  margin-top: 7px
+  border-radius: 5px
+  display: flex
+  align-items: center
+
+@media (max-width: 992px)
+.come
+  display: flex
+  margin: 0 auto
+
+.user-img
+  width: 30px
+  margin-right: 15px
+
+.come-p
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 16px
+  text-transform: uppercase
+  color: #EDB021
+  display: contents
+
+.offer.mainpage
+  padding: 30px 0 20px 0
+  margin-bottom: 0
+  .offer__cont
+    display: flex
+    justify-content: center
+    &-select
+      flex-grow: 1
+      display: flex
+      select
+        height: 100%
+        padding: 0 10px
+        border: none
+        position: relative
+        &:nth-child(1)
+          border-radius: $br-radius 0 0 $br-radius
+        &:nth-child(2)
+    &-input
+      width: 100%
+      flex-grow: 2
+      input
+        border-radius: 0 $br-radius $br-radius 0
+  @media(max-width: 992px)
+    padding: 20px 0 0 0
+    background: $main_bg3
+    .offer__cont
+      flex-direction: column-reverse
+      &-input
+        width: 100%
+        margin-bottom: 10px
+        input
+          border-radius: $br-radius
+      &-select
+        background: $main_white
+        position: relative
+        z-index: 1
+        text-align-last: center
+        &:after
+          position: absolute
+          content: ''
+          width: 150%
+          height: 100%
+          background: $main_white
+          top: 0
+          left: -25%
+          z-index: -1
+        select
+          text-align: center
+          padding: 10px
+          width: 50%
+          &:focus
+            outline: none
+            border: none
+            box-shadow: none
+          &:nth-child(2)
+            border-radius: 0 $br-radius $br-radius 0
+          option
+            text-align: center
+.firstScroll
+  padding: 0
+  min-height: 353px
+  display: flex
+  justify-content: center
+  align-items: center
+  background: url('../img/mainfs.png')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  &__cont
+    text-align: center
+    span
+      text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.74)
+      font-size: 14px
+      color: $main_white
+      text-transform: uppercase
+    h1
+      text-transform: uppercase
+      font-size: 49px
+      color: $main_white
+      text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.74)
+      span
+        color: $main_rgb
+        font-size: inherit
+
+.mainsearch-cont.mainpage
+  justify-content: space-between
+  .mainsearch-cont-result
+    flex-basis: 70%
+    &-more
+      text-align: center
+  .mainsearch-cont-banner
+    flex-basis: 25%
+
+.fast-serch
+  padding: 50px 0
+  background: #F1F1F1
+  &-cont
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &-item
+      width: 228px
+      &-img
+        margin-bottom: 10px
+        img
+          max-width: 100%
+          height: auto
+      &-title
+        margin-bottom: 20px
+        h4
+          margin: 0
+          padding: 0
+          font-size: 16px
+          text-transform: uppercase
+      &-btn
+        .mainBtn
+          text-transform: uppercase
+          padding: 5px 10px
+          font-size: 14px
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  @media(max-width: 992px)
+    &-cont
+      flex-direction: column
+      align-items: center
+      &-item
+        margin-bottom: 20px
+
+.fast-order
+  padding: 50px 0
+  background: $main_bg3
+  &-cont
+    text-align: center
+    h2
+      font-size: 24px
+      padding: 0
+      margin: 0 0 10px 0
+      text-transform: uppercase
+      span
+        color: $main_rgb
+    h4
+      margin: 0
+      padding: 0
+      font-size: 12px
+      text-transform: uppercase
+    hr
+      width: 246px
+      background-color: $main_rgb
+    .mainBtn
+      display: inline-block
+      background: $main_rgb
+      color: $main_white
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      &:hover
+        color: $main_color
+
+.how 
+  padding: 50px 0
+  &-cont
+    display: flex
+    justify-content: space-between
+    position: relative
+    z-index: 1
+    &-item
+      text-align: center
+      width: 287px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      background: $main_white
+      padding: 30px
+      &-icon
+        img
+          //max-width: 100%
+          display: block
+          margin-left: auto
+          margin-right: auto
+      &-title
+        margin-bottom: 10px
+        h4
+          margin: 0
+          padding: 0
+          text-transform: uppercase
+          font-size: 18px
+          color: $main_rgb
+      &-text
+        p
+          margin: 0
+          padding: 0
+          font-size: 18px
+    &:after
+      z-index: -1
+      position: absolute
+      content: ''
+      width: 100%
+      height: 1px
+      background: $main_rgb
+      top: 50%
+      left: 0
+  @media(max-width: 992px)
+    &-cont
+      flex-direction: column
+      align-items: center
+      &:after
+        width: 1px
+        height: 100%
+        left: 50%
+        top: 0
+      &-item
+        margin-bottom: 40px
+        &:last-child
+          padding-bottom: 0
+          margin-bottom: 0
+
+.tarrifs.mainpage
+  background: $main_bg3
+  .tarrifs-cont-head
+    text-align: center
+    background: none
+    border: none 
+    position: relative
+    margin-bottom: 60px
+    &:after
+      position: absolute
+      content: ''
+      width: 246px
+      height: 1px
+      bottom: -30px
+      left: 50%
+      transform: translateX(-50%)
+      background: $main_rgb
+    p
+      color: $main_color
+      font-size: 24px

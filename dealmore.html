@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="description" CONTENT="description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Title" />
+	<meta property="og:description" content="description" />
+	<meta property="og:image" content="=">
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<link rel="shortcut icon" href="" />
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">	
+	<link rel="stylesheet" href="libs/mpopup/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+<header class="header">
+	<div class="overlay" id="overlay"></div>
+	<nav class="header__nav">
+		<div class="header__nav-title">
+			<h3>Лучшие скидки и акции на тысячи товаров</h3>
+		</div>
+		<!-- /.header__nav-title -->
+		<div class="header__nav-mobile">
+			<div class="header__nav-mobile-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->	
+			<div class="header__nav-mobile-btn">
+				<div class="header__nav-mobile-btn-wrap" id="btnOpen">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- /.header__nav-mobile-btn-wrap -->
+			</div>
+			<!-- /.header__nav-mobile-btn -->
+		</div>
+		<!-- /.header__nav-mobile -->
+		<div class="header__nav-cont global-cont" id="menuList">
+			<div class="header__nav-cont-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->
+			<div class="header__nav-cont-list">
+				<ul>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">Заказы</a></li>
+					<li><a href="#">Торги</a></li>
+					<li><a href="#">Сделки</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-list -->
+			<div class="header__nav-cont-calc">
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/metall.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор металла</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/logistic.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор логистики</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+			</div>
+			<!-- /.header__nav-cont-calc -->
+			<div class="header__nav-cont-user">
+				<div class="header__nav-cont-user-icon">
+					<img src="img/user.png" alt="User">
+				</div>
+				<!-- /.header__nav-cont-user-icon -->
+				<div class="header__nav-cont-user-desc">
+					<div class="header__nav-cont-user-desc-title">
+						<p>Поставщик<br><span>ООО "Северсталь"</span></p>
+					</div>
+					<!-- /.header__nav-cont-user-desc-title -->
+					<div class="header__nav-cont-user-desc-start">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+					</div>
+					<!-- /.header__nav-cont-user-desc-start -->
+				</div>
+				<!-- /.header__nav-cont-user-desc -->
+				<div class="header__nav-cont-user-arrow">
+					<a href="#"><img src="img/arrow-down.png" alt=""></a>
+				</div>
+				<!-- /.header__nav-cont-user-arrow -->
+			</div>
+			<!-- /.header__nav-cont-user -->
+			<div class="header__nav-cont-userinfo">
+				<ul>
+					<li><a href="#">Мой профиль</a></li>
+					<li><a href="#">Мои объявления</a></li>
+					<li><a href="#">Продлить подписку</a></li>
+					<li><a href="#">Сообщения</a><span>1</span></li>
+					<li><a href="#">Выход</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-userinfo -->
+			<div class="header__nav-cont-close" id="btnClose">
+				<span></span>
+				<span></span>
+			</div>
+			<!-- /.header__nav-cont-close -->
+		</div>
+		<!-- /.header__nav-cont -->
+	</nav>
+</header>
+
+<section class="searchs">
+	<div class="global-cont">
+		<div class="searchs__dealmore">
+			<div class="searchs__dealmore-btn">
+				<a href="#popupdeal-end" class="mainBtn mpopup">Отправил</a>
+				<a href="#popupdeal" class="mainBtn mpopup">Открыть спор</a>
+			</div>
+			<!-- /.searchs__dealmore-btn -->
+			<div class="mpopup-window mfp-hide white-popup-block" id="popupdeal">
+				<div class="mpopup-window-header">
+					<p>id сделки <span>45678985</span></p>
+					<span class="mpopup-window-header-close popup-close"></span>
+				</div>
+				<!-- /.mpopup-window-header -->
+				<div class="mpopup-window-main">
+					<form>
+						<textarea name="mpopupMsg" rows="5" placeholder="Напишите о причине спора, с вами свяжется администратор сайта"></textarea>
+						<div class="mpopup-window-main-email">
+							<p>Укажите удобный для вас способ связи</p>
+							<input type="text" name="connect" placeholder="Телефон/Email">
+						</div>
+						<!-- /.mpopup-window-main-email -->
+						<div class="mpopup-window-main-btn">
+							<button class="mainBtn sentTest">отправить</button>
+						</div>
+						<!-- /.mpopup-window-main-btn -->
+					</form>
+				</div>
+				<!-- /.mpopup-window-main -->
+			</div>
+			<!-- /.mpopup-window -->
+			<div class="mpopup-window mfp-hide white-popup-block mpopup-window-border" id="popupdeal-end">
+				<div class="mpopup-window-main">
+					<span class="mpopup-window-header-close popup-close"></span>
+					<h4>Спор открыт</h4>
+					<hr>
+					<h5>Ожидайте, с вами свяжется администратор</h5>
+				</div>
+				<!-- /.mpopup-window-main -->
+			</div>
+			<!-- /.mpopup-window -->
+		</div>
+		<!-- /.searchs__dealmore -->
+		<div class="searchs__offer">
+			<div class="searchs__offer-title">
+				<h3>Сделка</h3>
+			</div>
+			<!-- /.searchs__offer-title -->
+			<div class="searchs__offer-lists">
+				<div class="searchs__offer-lists-main searchs__offer-lists-dealMore">
+					<ul>
+						<li>
+							<h5>ID</h5>
+							<p>4327934</p>
+						</li>
+						<li>
+							<h5>Дата создания</h5>
+							<p>10.08.2020</p>
+						</li>
+						<li>
+							<h5>Наименование</h5>
+							<p>Арматура</p>
+						</li>
+						<li>
+							<h5>марка</h5>
+							<p>а400</p>
+						</li>
+						<li>
+							<h5>Размер</h5>
+							<p>8</p>
+						</li>
+						<li>
+							<h5>примечания</h5>
+							<p>ГОСТ 32901-2014</p>
+						</li>
+						<li>
+							<h5>кол-во</h5>
+							<p>12 тонн</p>
+						</li>
+						<li>
+							<h5>счет</h5>
+							<p>скачать <a href=""><img style="max-width: 23px" src="img/downL.png" alt="счет"></a></p>
+						</li>
+						<li>
+							<h5>Цена</h5>
+							<p>116000</p>
+						</li>
+					</ul>
+				</div>
+				<!-- /.searchs__offer-lists-main -->
+			</div>
+			<!-- /.searchs__offer-lists -->
+		</div>
+		<!-- /.searchs__offer -->
+		<div class="searchs__offer searchs__contact">
+			<div class="searchs__offer-title ">
+				<h3>Поставщик</h3>
+			</div>
+			<!-- /.searchs__offer-title -->
+			<div class="searchs__offer-lists">
+				<div class="searchs__offer-lists-main searchs__offer-lists-dealMore dealMore-post">
+					<ul>
+						<li>
+							<h5>Наименование</h5>
+							<p>Торговое унитарное предприятие  “Северсталь”</p>
+						</li>
+						<li>
+							<h5>инн</h5>
+							<p>3356843457</p>
+						</li>
+						<li>
+							<h5>Адрес/контакты</h5>
+							<p>г. Москва, переулок. Краснознаменых 1 пом. 316
+								+7 (809) 303-48-34
+								severstal@mail.ru</p>
+						</li>
+						<li>
+							<h5>Банковские реквизиты</h5>
+							<p> Р/с: BY38 ALFA 3012 2366 8500 1027 0000
+								БИК: ALFABY2X
+								ЗАО "Альфа-Банк" Юридический адрес: Ул. Сурганова, 43-47, 220013 Минск</p>
+						</li>
+					</ul>
+				</div>
+				<!-- /.searchs__offer-lists-main -->
+			</div>
+			<!-- /.searchs__offer-lists -->
+		</div>
+		<!-- /.searchs__offer -->
+		<div class="searchs__offer searchs__contact">
+			<div class="searchs__offer-title searchs__offer-postav">
+				<h3>Покупатель</h3>
+			</div>
+			<!-- /.searchs__offer-title -->
+			<div class="searchs__offer-lists">
+				<div class="searchs__offer-lists-main searchs__offer-lists-dealMore dealMore-post">
+					<ul>
+						<li>
+							<h5>Наименование</h5>
+							<p>Торговое унитарное предприятие  “Северсталь”</p>
+						</li>
+						<li>
+							<h5>инн</h5>
+							<p>3356843457</p>
+						</li>
+						<li>
+							<h5>Адрес/контакты</h5>
+							<p>г. Москва, переулок. Краснознаменых 1 пом. 316
+								+7 (809) 303-48-34
+								severstal@mail.ru</p>
+						</li>
+						<li>
+							<h5>Банковские реквизиты</h5>
+							<p> Р/с: BY38 ALFA 3012 2366 8500 1027 0000
+								БИК: ALFABY2X
+								ЗАО "Альфа-Банк" Юридический адрес: Ул. Сурганова, 43-47, 220013 Минск</p>
+						</li>
+					</ul>
+				</div>
+				<!-- /.searchs__offer-lists-main -->
+			</div>
+			<!-- /.searchs__offer-lists -->
+			<div class="searchs__offer-total">
+				<div class="searchs__offer-total-wrap">
+					<p>Комиссия по сделке составляет: 15000 ₽</p>
+					<hr>
+					<p>Комиссию оплачивает: Покупатель</p>
+				</div>
+				<!-- /.searchs__offer-total-wrap -->
+			</div>
+			<!-- /.searchs__offer-total-->
+			<div class="searchs__offer-chat">
+				<div class="searchs__offer-chat-wrap">
+					<div class="searchs__offer-chat-wrap-title">
+						<p>Чат</p>
+						<hr>
+					</div>
+					<!-- /.searchs__offer-chat-wrap-title -->
+					<div class="searchs__offer-chat-wrap-main">
+						<p class="searchs__offer-chat-wrap-main-fuser">Добрый день!</p>
+						<p class="searchs__offer-chat-wrap-main-tuser">Добрый день!</p>
+						<p class="searchs__offer-chat-wrap-main-fuser">Вы получили заказ?</p>
+					</div>
+					<!-- /.searchs__offer-chat-wrap-main -->
+				</div>
+				<!-- /.searchs__offer-chat-wrap -->
+				<div class="searchs__offer-chat-msg">
+					<textarea rows="5" placeholder="Написать сообщение... "></textarea>
+					<button class="mainBtn">отправить</button>
+				</div>
+				<!-- /.searchs__offer-chat-msg -->
+			</div>
+			<!-- /.searchs__offer-chat -->
+		</div>
+		<!-- /.searchs__offer -->
+	</div>
+	<!-- /.global-cont -->
+</section>
+
+
+<footer class="footer">
+	<div class="footer__cont global-cont">
+		<div class="footer__cont-list">
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">заказы</a></li>
+					<li><a href="#">Торги</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+			<div class="footer__cont-list-logo">
+				<img src="img/logoIn.svg" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.footer__cont-list-logo -->
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Сделки</a></li>
+					<li><a href="#">Тарифы</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+		</div>
+		<!-- /.footer__cont-list -->
+		<div class="footer__cont-social">
+			<a href="#"><img src="img/logo_instagram.png" alt=""></a>
+			<a href="#"><img src="img/logo_vk.png" alt=""></a>
+			<a href="#"><img src="img/logo_youtube1.png" alt=""></a>
+		</div>
+		<!-- /.footer__cont-social -->
+	</div>
+	<!-- /.footer__cont -->
+	<div class="footer__bankIcon">
+		<a href="#"><img class="visa" src="img/visa.png" alt=""></a>
+		<a href="#"><img class="mastercard" src="img/mastercard.png" alt=""></a>
+		<a href="#"><img class="tinkoff" src="img/Tinkoff.png" alt=""></a>
+	</div>
+	<!-- /.footer__bankIcon -->
+	<div class="footer__copyright">
+		<ul>
+			<li>© 2020 Все права защищены</li>
+			<li><a href="#">Публичная оферта</a></li>
+			<li><a href="#">Правила пользования</a></li>
+			<li><a href="#">ООО "PMP Tech" ИНН 2048290</a></li>
+		</ul>
+	</div>
+	<!-- /.footer__copyright -->
+</footer>
+
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/mpopup/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

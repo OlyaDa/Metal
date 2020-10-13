@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="description" CONTENT="description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Title" />
+	<meta property="og:description" content="description" />
+	<meta property="og:image" content="=">
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<link rel="shortcut icon" href="" />
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">	
+<link rel="stylesheet" href="libs/mpopup/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="overlay" id="overlay"></div>
+    <nav class="header__nav">
+      <div class="header__nav-title">
+        <h3>Лучшие скидки и акции на тысячи товаров</h3>
+      </div>
+      <!-- /.header__nav-title -->
+      <div class="header__nav-mobile">
+        <div class="header__nav-mobile-logo">
+          <img src="img/logoIn.png" alt="">
+          <img src="img/logo.svg" alt="">
+        </div>
+        <!-- /.header__nav-cont-logo -->	
+        <div class="header__nav-mobile-btn">
+          <div class="header__nav-mobile-btn-wrap" id="btnOpen">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- /.header__nav-mobile-btn-wrap -->
+        </div>
+        <!-- /.header__nav-mobile-btn -->
+      </div>
+      <!-- /.header__nav-mobile -->
+      <div class="header__nav-cont global-cont" id="menuList">
+        <div class="header__nav-cont-logo">
+          <img src="img/logoIn.png" alt="">
+          <img src="img/logo.svg" alt="">
+        </div>
+        <!-- /.header__nav-cont-logo -->
+        <div class="header__nav-cont-list">
+          <ul>
+            <li><a href="#">Поиск</a></li>
+            <li><a href="#">Заказы</a></li>
+            <li><a href="#">Торги</a></li>
+            <li><a href="#">Сделки</a></li>
+          </ul>
+        </div>
+        <!-- /.header__nav-cont-list -->
+        <div class="header__nav-cont-calc">
+          <div class="header__nav-cont-calc-wrap">
+            <div class="header__nav-cont-calc-wrap-img">
+              <a href="#"><img src="img/metall.png" alt="Калькулятор"></a>
+            </div>
+            <!-- /.header__nav-cont-calc-wrap-img -->
+            <div class="header__nav-cont-calc-wrap-desc">
+              <a href="#popupcalc" class="mpopup">Калькулятор металла</a>
+            </div>
+            <!-- /.header__nav-cont-calc-wrap-desc -->
+          </div>
+          <!-- /.header__nav-cont-calc-wrap -->
+          <div class="header__nav-cont-calc-wrap">
+            <div class="header__nav-cont-calc-wrap-img">
+              <a href="#"><img src="img/logistic.png" alt="Калькулятор"></a>
+            </div>
+            <!-- /.header__nav-cont-calc-wrap-img -->
+            <div class="header__nav-cont-calc-wrap-desc">
+              <a href="#">Калькулятор логистики</a>
+            </div>
+            <!-- /.header__nav-cont-calc-wrap-desc -->
+          </div>
+          <!-- /.header__nav-cont-calc-wrap -->
+        </div>
+
+		  <div class="come">
+			  <a href="#authWindow" class="come-in mpopup">
+				  <img class="user-img" src="img/user.png" alt="User">
+				  <p class="come-p">Войти</p>
+			  </a>
+		  </div>
+
+        <!-- /.header__nav-cont-calc -->
+        <!--<div class="header__nav-cont-user user-cont">-->
+          <!--<div class="header__nav-cont-user-icon">-->
+            <!--<img src="img/user.svg" alt="User">-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.header__nav-cont-user-icon &ndash;&gt;-->
+          <!--<div class="header__nav-cont-user-desc">-->
+            <!--<div class="header__nav-cont-user-desc-title">-->
+              <!--<p>Поставщик<br><span>ООО "Северсталь"</span></p>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /.header__nav-cont-user-desc-title &ndash;&gt;-->
+            <!--<div class="header__nav-cont-user-desc-start">-->
+              <!--<img src="img/Star.svg" alt="star">-->
+              <!--<img src="img/Star.svg" alt="star">-->
+              <!--<img src="img/Star.svg" alt="star">-->
+              <!--<img src="img/Star.svg" alt="star">-->
+              <!--<img src="img/Star.svg" alt="star">-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /.header__nav-cont-user-desc-start &ndash;&gt;-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.header__nav-cont-user-desc &ndash;&gt;-->
+          <!--<div class="header__nav-cont-user-arrow">-->
+            <!--<a href="#"><img src="img/userArrow.svg" alt=""></a>-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.header__nav-cont-user-arrow &ndash;&gt;-->
+        <!--</div>-->
+        <!-- /.header__nav-cont-user -->
+        <!--<div class="header__nav-cont-userinfo user-list">-->
+          <!--<ul>-->
+            <!--<li><a href="#authWindow" class="mpopup">Мой профиль</a></li>-->
+            <!--<li><a href="#">Мои объявления</a></li>-->
+            <!--<li><a href="#">Продлить подписку</a></li>-->
+            <!--<li><a href="#">Сообщения</a><span>1</span></li>-->
+            <!--<li><a href="#">Выход</a></li>-->
+          <!--</ul>-->
+        <!--</div>-->
+        <!-- /.header__nav-cont-userinfo -->
+        <div class="header__nav-cont-close" id="btnClose">
+          <span></span>
+          <span></span>
+        </div>
+        <!-- /.header__nav-cont-close -->
+      </div>
+      <!-- /.header__nav-cont -->
+    </nav>
+  </header>
+
+  <div class="auth-window mfp-hide white-popup-block" id="authWindow">
+	  <div class="mpopup-window-header">
+		  <p>Авторизация</p>
+		  <span class="mpopup-window-header-close popup-close"></span>
+	  </div>
+	  <div class="auth-window-cont">
+		  <div class="auth-window-cont-sign">
+			  <a href="#">Зарегистрироваться</a>
+		  </div>
+		  <!-- /.auth-window-cont-sing -->
+		  <div class="auth-window-cont-input">
+			  <select name="role">
+				  <option value="Выберите роль" selected disabled>Выберите роль</option>
+				  <option value="01">01</option>
+				  <option value="01">01</option>
+				  <option value="01">01</option>
+			  </select>
+			  <input type="email" placeholder="email" name="email">
+			  <input type="text" placeholder="Пароль" name="pass">
+			  <button class="mainBtn">ВОЙТИ</button>
+		  </div>
+		  <!-- /.auth-window-cont-input -->
+		  <div class="auth-window-cont-check">
+			  <div class="auth-window-cont-check-wrap">
+				  <input type="checkbox" name="remember"  id="remember"><label for="remember">Запомнить меня</label>
+			  </div>
+			  <!-- /.auth-window-cont-check-wrap -->
+
+			  <a href="#lostPass" class="mpopup">Восстановить пароль</a>
+		  </div>
+		  <!-- /.auth-window-cont-check -->
+	  </div>
+	  <!-- /.auth-window-cont -->
+  </div>
+
+  <div class="auth-window mfp-hide white-popup-block" id="lostPass">
+	  <div class="mpopup-window-header">
+		  <p>Восстановление пароля</p>
+		  <span class="mpopup-window-header-close popup-close"></span>
+	  </div>
+	  <div class="auth-window-cont">
+		  <div class="auth-window-cont-input mb-0">
+			  <input type="email" placeholder="Введите свой email" name="email">
+			  <button class="mainBtn">ОТПРАВИТЬ ПАРОЛЬ</button>
+		  </div>
+		  <!-- /.auth-window-cont-input -->
+	  </div>
+	  <!-- /.auth-window-cont -->
+  </div>
+
+  <section class="offer mainpage">
+    <div class="offer__cont global-cont">
+      <div class="offer__cont-select">
+        <select>
+          <option value="Категории" selected disable>Раздел</option>
+          <option value="Категории">Раздел</option>
+          <option value="Категории">Раздел</option>
+          <option value="Категории">Раздел</option>
+        </select>
+        <select>
+          <option value="Категории" selected disable>Категории</option>
+          <option value="Категории">Категории</option>
+          <option value="Категории">Категории</option>
+          <option value="Категории">Категории</option>
+        </select>
+      </div>
+      <!-- /.offer__cont-input-select -->
+      <div class="offer__cont-input">
+        <label for="offer-find"><img class="lupa" src="img/lupa.png" alt=""></label>
+        <input type="text" placeholder="Начните вводить наименование или параметры металла, который хотите найти" id="offer-find">
+      </div>
+      <!-- /.offer__cont-input -->
+    </div>
+    <!-- /.offer__cont -->
+  </section>
+  
+  <section class="firstScroll">
+    <div class="firstScroll__cont global-cont">
+      <span>платформа</span>
+      <h1>продажи <span>&</span> покупки</h1>
+      <span>металла</span>
+    </div>
+    <!-- /.firstScroll__cont -->
+  </section>
+
+  <div class="mainsearch-cont global-cont mainpage">
+		<div class="mainsearch-cont-result">
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000 ₽</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000 ₽</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item product-hit">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<!-- /.mainsearch-cont-result-item-count-img -->
+					<div class="mainsearch-cont-result-item-count-price">
+						<div class="product-hit-img">
+							<p>Выгодное предложение</p>
+							<img src="img/hit.png" alt="Hit">
+						</div>
+						<p>цена</p>
+						<h4>116000 ₽</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000 ₽</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000 ₽</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000 ₽</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+      <div class="mainsearch-cont-result-more">
+        <span>Еще...</span>
+      </div>
+      <!-- /.mainsearch-cont-result-more -->
+		</div>
+		<!-- /.mainsearch-cont-result -->
+		<div class="mainsearch-cont-banner">
+			<div class="mainsearch-cont-banner-wrap">
+				<img src="img/banner-right.png" alt="bn">
+			</div>
+			<!-- /.mainsearch-cont-banner-wrap -->
+			<div class="mainsearch-cont-banner-wrap">
+				<img src="img/banner-right.png" alt="bn">
+			</div>
+			<!-- /.mainsearch-cont-banner-wrap -->
+		</div>
+		<!-- /.mainsearch-cont-banner -->
+	</div>
+  <!-- /.mainsearch-cont -->
+  
+<section class="fast-serch">
+  <div class="mainpage-header">
+    <div class="mainpage-header-cont">
+      <img src="img/MetalGOtitle.svg" alt="">
+      <h3>Самый быстрый <span>поиск</span> металла</h3>
+    </div>
+    <!-- /.mainpage-header-cont -->
+  </div>
+  <!-- /.mainpage-header -->
+  <div class="fast-serch-cont global-cont">
+    <div class="fast-serch-cont-item">
+      <div class="fast-serch-cont-item-img">
+        <img src="img/fast01.svg" alt="">
+      </div>
+      <!-- /.fast-serch-cont-item-img -->
+      <div class="fast-serch-cont-item-title">
+        <h4>Более 2.000.000 предложений от 1500 поставщиков</h4>
+      </div>
+      <!-- /.fast-serch-cont-item-title -->
+      <div class="fast-serch-cont-item-btn">
+        <a href="#0" class="mainBtn">предложения</a>
+      </div>
+      <!-- /.fast-serch-cont-item-btn -->
+    </div>
+    <!-- /.fast-serch-cont-item -->
+    <div class="fast-serch-cont-item">
+      <div class="fast-serch-cont-item-img">
+        <img src="img/fast02.svg" alt="">
+      </div>
+      <!-- /.fast-serch-cont-item-img -->
+      <div class="fast-serch-cont-item-title">
+        <h4>Более 2.000 заявок от реальных предприятий</h4>
+      </div>
+      <!-- /.fast-serch-cont-item-title -->
+      <div class="fast-serch-cont-item-btn">
+        <a href="#0" class="mainBtn">Заявки</a>
+      </div>
+      <!-- /.fast-serch-cont-item-btn -->
+    </div>
+    <!-- /.fast-serch-cont-item -->
+    <div class="fast-serch-cont-item">
+      <div class="fast-serch-cont-item-img">
+        <img src="img/fast03.svg" alt="">
+      </div>
+      <!-- /.fast-serch-cont-item-img -->
+      <div class="fast-serch-cont-item-title">
+        <h4>Все тендеры по металлу, собранные в одном месте</h4>
+      </div>
+      <!-- /.fast-serch-cont-item-title -->
+      <div class="fast-serch-cont-item-btn">
+        <a href="#0" class="mainBtn">Торги</a>
+      </div>
+      <!-- /.fast-serch-cont-item-btn -->
+    </div>
+    <!-- /.fast-serch-cont-item -->
+  </div>
+  <!-- /.fast-serch-cont -->
+</section>
+
+<section class="fast-order">
+  <div class="fast-order-cont global-cont">
+    <h2>Максимальная <span>скорость</span> обработки заявок</h2>
+    <h4>общайтесь и совершайте сделки прямо на metalgo </h4>
+    <hr>
+    <a href="#0" class="mainBtn">Подключись и пользуйся бесплатно</a>
+  </div>
+  <!-- /.fast-order-cont -->
+</section>
+
+<section class="how">
+  <div class="mainpage-header">
+    <div class="mainpage-header-cont">
+      <img src="img/MetalGOtitle.svg" alt="">
+      <h3>как это<span>работает</span></h3>
+    </div>
+    <!-- /.mainpage-header-cont -->
+  </div>
+  <!-- /.mainpage-header -->
+  <div class="how-cont global-cont">
+    <div class="how-cont-item">
+      <div class="how-cont-item-icon">
+        <img class="how01" src="img/how01.png" alt="">
+      </div>
+      <!-- /.how-cont-item-icon -->
+      <div class="how-cont-item-title">
+        <h4>оставляйте предложение
+          или заявку</h4>
+      </div>
+      <!-- /.how-cont-item-title -->
+      <div class="how-cont-item-text">
+        <p>Публикуйте актуальные позиции со своего склада или оставьте заявку на покупку необходимого металла </p>
+      </div>
+      <!-- /.how-cont-item-text -->
+    </div>
+    <!-- /.how-cont-item -->
+    <div class="how-cont-item">
+      <div class="how-cont-item-icon">
+        <img class="how02" src="img/how02.png" alt="">
+      </div>
+      <!-- /.how-cont-item-icon -->
+      <div class="how-cont-item-title">
+        <h4>быстро находите необходимый металл</h4>
+      </div>
+      <!-- /.how-cont-item-title -->
+      <div class="how-cont-item-text">
+        <p>Система интелектуального поиска поможет вам быстро найти любой металл в любой точке России</p>
+      </div>
+      <!-- /.how-cont-item-text -->
+    </div>
+    <!-- /.how-cont-item -->
+    <div class="how-cont-item">
+      <div class="how-cont-item-icon">
+        <img class="how03" src="img/how03.png" alt="">
+      </div>
+      <!-- /.how-cont-item-icon -->
+      <div class="how-cont-item-title">
+        <h4>заключайте сделку без рисков прямо на сайте</h4>
+      </div>
+      <!-- /.how-cont-item-title -->
+      <div class="how-cont-item-text">
+        <p>Услуга Безопасная Сделка поможет вам быстро уформить сделку по покупке/продаже металла, исключая все риски</p>
+      </div>
+      <!-- /.how-cont-item-text -->
+    </div>
+    <!-- /.how-cont-item -->
+  </div>
+  <!-- /.how-cont -->
+</section>
+
+<section class="tarrifs mainpage">
+  <div class="tarrifs-cont global-cont">
+    <div class="tarrifs-cont-head">
+      <p>Тарифы</p>
+    </div>
+    <!-- /.tarrifs-cont-head -->
+    <div class="tarrifs-cont-tabs-list tabs-list">
+      <ul>
+        <li>поставщику</li>
+        <li>покупателю</li>
+        <li>дополнительные услуги</li>
+      </ul>
+    </div>
+    <!-- /.tarrifs-cont-titleList -->
+    <div class="tarrifs-cont-tabs">
+      <div class="tarrifs-cont-tabs-wrap tabs-cont">
+        <div class="tarrifs-cont-tabs-wrap-item border-left">
+          <h5>1 месяц</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+        <div class="tarrifs-cont-tabs-wrap-item wrap-item-active">
+          <h5>3 месяца</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+        <div class="tarrifs-cont-tabs-wrap-item border-right">
+          <h5>6 месяцев</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+      </div>
+      <!-- /.tarrifs-cont-tabs -->
+      <div class="tarrifs-cont-tabs-wrap tabs-cont">
+        <div class="tarrifs-cont-tabs-wrap-item border-left">
+          <h5>1 месяц</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+        <div class="tarrifs-cont-tabs-wrap-item wrap-item-active">
+          <h5>3 месяца!!</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+        <div class="tarrifs-cont-tabs-wrap-item border-right">
+          <h5>6 месяцев</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+      </div>
+      <!-- /.tarrifs-cont-tabs -->
+      <div class="tarrifs-cont-tabs-wrap tabs-cont">
+        <div class="tarrifs-cont-tabs-wrap-item border-left">
+          <h5>1 месяц</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+        <div class="tarrifs-cont-tabs-wrap-item wrap-item-active">
+          <h5>3 месяца</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+      </div>
+      <!-- /.tarrifs-cont-tabs -->
+    </div>
+    <!-- /.tarrifs-cont-tabs -->
+  </div>
+  <!-- /.tarrifs-cont -->
+</section>
+
+  <footer class="footer">
+    <div class="footer__cont global-cont">
+      <div class="footer__cont-list">
+        <div class="footer__cont-list-wrap">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Поиск</a></li>
+            <li><a href="#">заказы</a></li>
+            <li><a href="#">Торги</a></li>
+          </ul>
+        </div>
+        <!-- /.footer__cont-list-wrap -->
+        <div class="footer__cont-list-logo">
+          <img src="img/logoIn.png" alt="">
+          <img src="img/logo.svg" alt="">
+        </div>
+        <!-- /.footer__cont-list-logo -->
+        <div class="footer__cont-list-wrap">
+          <ul>
+            <li><a href="#">Сделки</a></li>
+            <li><a href="#">Тарифы</a></li>
+            <li><a href="#">Помощь</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <!-- /.footer__cont-list-wrap -->
+      </div>
+      <!-- /.footer__cont-list -->
+      <div class="footer__cont-social">
+        <a href="#"><img src="img/logo_instagram.png" alt=""></a>
+        <a href="#"><img src="img/logo_vk.png" alt=""></a>
+        <a href="#"><img src="img/logo_youtube1.png" alt=""></a>
+      </div>
+      <!-- /.footer__cont-social -->
+    </div>
+    <!-- /.footer__cont -->
+    <div class="footer__bankIcon">
+		<a href="#"><img class="visa" src="img/visa.png" alt=""></a>
+		<a href="#"><img class="mastercard" src="img/mastercard.png" alt=""></a>
+		<a href="#"><img class="tinkoff" src="img/Tinkoff.png" alt=""></a>
+    </div>
+    <!-- /.footer__bankIcon -->
+    <div class="footer__copyright">
+      <ul>
+        <li>© 2020 Все права защищены</li>
+        <li><a href="#">Публичная оферта</a></li>
+        <li><a href="#">Правила пользования</a></li>
+        <li><a href="#">ООО "PMP Tech" ИНН 2048290</a></li>
+      </ul>
+    </div>
+    <!-- /.footer__copyright -->
+  </footer>
+  
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+      <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/mpopup/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+  
+  </body>
+  
+  </html>

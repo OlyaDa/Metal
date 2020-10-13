@@ -1,0 +1,778 @@
+/* --- forms Start ------------------------------------------------*/
+.mpopup-window-border
+  border: 1px solid $main_rgb
+  padding: 10px
+.mpopup-window
+  z-index: 9999999999999
+  display: block
+  width: 500px
+  max-width: 100%
+  margin: 0 auto
+  background: $main_bg3
+  border-radius: $br-radius
+  &-header
+    background: $main_color
+    padding: 5px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-top-left-radius: $br-radius
+    border-top-right-radius: $br-radius
+    margin-bottom: 10px
+    p
+      text-transform: uppercase
+      color: $main_white
+      margin: 0
+      padding: 0
+    &-close
+      position: relative
+      display: block
+      width: 30px
+      height: 30px
+      cursor: pointer
+      &:after
+        content: ''
+        position: absolute
+        top: 38%
+        left: 0
+        width: 15px
+        height: 3px
+        background: $main_rgb
+        transform: rotate(-45deg)
+      &:before
+        content: ''
+        position: absolute
+        bottom: 52%
+        left: 0
+        width: 15px
+        height: 3px
+        background: $main_rgb
+        transform: rotate(45deg)
+  &-main
+    padding: 0 10px 10px 10px
+    position: relative
+    .popup-close
+      position: absolute
+      right: -20px
+      top: -10px
+    textarea
+      padding: 5px
+      width: 100%
+      margin-bottom: 5px
+      border-radius: $br-radius
+    ::placeholder
+      color: $main_bg3
+      font-size: 14px
+    h4
+      text-align: center
+      margin: 0
+      padding: 0
+      font-size: 18px
+      text-transform: uppercase
+    h5
+      text-align: center
+      margin: 0
+      padding: 0
+      font-size: 16px
+    hr
+      margin: 5px auto
+      width: 60%  
+      background-color: $main_rgb
+    &-email
+      p
+        margin: 0 0 5px 0
+        padding: 0
+        font-size: 14px
+      input
+        border-radius: $br-radius
+        border: 1px solid $main_color
+        margin-bottom: 5px
+        padding: 5px
+    &-btn
+      .mainBtn
+        border: 1px solid $main_color
+        display: block
+        margin-left: auto
+    &-calc
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      &-title
+        width: 100%
+        flex-basis: 100%
+        padding-left: 100px
+        h4
+          font-size: 16px
+          margin-bottom: 10px
+      &-item
+        width: 45%
+        flex-basis: 45%
+        &-in
+          input
+            padding: 5px
+            margin-bottom: 10px
+            border-radius: $br-radius
+            color: $main_bgD
+            border: 1px solid $main_bgD
+            max-width: 100%
+        h5
+          text-align: left
+        &-sel
+          select
+            padding: 5px
+            width: 100%
+            margin-bottom: 10px
+            border-radius: $br-radius
+            color: $main_bgD
+          ::placeholder
+            color: $main_bgD
+        &-box
+          h5
+            text-align: left
+            font-size: 14px
+            margin-bottom: 10px
+          &-img
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            a
+              background: $main_white
+              padding: 5px
+              display: inline-block
+              width: 17%
+              flex-basis: 17%
+              border-radius: $br-radius
+              border: 1px solid $main_rgb
+              display: flex
+              justify-content: center
+              align-items: center
+              margin-bottom: 10px
+            a:nth-of-type(1)
+              svg
+                line
+                  stroke: $main_color
+            a:nth-of-type(2)
+              svg
+                rect
+                  fill: $main_color
+            a:nth-of-type(3)
+              svg
+                circle
+                  stroke: $main_color
+            .item-box-active
+              background: $main_color
+              svg
+                line
+                  stroke: $main_rgb !important
+                rect
+                  fill: $main_rgb !important
+                circle
+                  stroke: $main_rgb !important
+                path
+                  fill: $main_rgb
+              .item-box-active-fillnone
+                circle
+                  fill: $main_rgb !important
+              .item-box-active-fillin
+                rect
+                  stroke: $main_rgb !important
+                  fill: $main_color !important
+      &-wiev
+        padding: 20px 10px
+        width: 100%
+        flex-basis: 100%
+        background: $main_white
+        border-radius: $br-radius
+        border: 1px solid $main_color
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 10px
+        &-wrap
+          img
+            display: block
+            margin-left: auto
+            margin-right: auto
+            width: 80%
+            height: auto
+
+
+.auth-window
+  margin: 0 auto
+  //width: 468px
+  background: $main_bgD
+  border-radius: $br-radius
+  border: 1px solid #000
+  .mpopup-window-header
+    background: rgba(0, 0, 0, 0.47)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)auth-window
+    border-radius: 5px 5px 0px 0px
+    text-align: center
+    p
+      color: $main_rgb
+      margin-left: auto
+      margin-right: auto
+  &-cont
+    padding: 0 20px 20px 20px
+    &-sign
+      text-align: right
+      margin-bottom: 20px
+      margin-top: 20px
+      a
+        display: inline-block
+        color: $main_rgb
+    &-input
+      margin-bottom: 20px
+      select, input
+        width: 100% 
+        border-radius: $br-radius
+        border: 1px solid $main_color
+        padding: 5px
+        margin-bottom: 10px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      .mainBtn
+        border: 1px solid #000
+        width: 100%
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        background: $main_rgb
+        color: $main_white
+        transition: .3s
+        margin-top: 20px
+        &:hover
+          color: $main_color
+      ::placeholder
+        color: $main_bg3
+    &-check
+      display: flex
+      justify-content: space-around
+      align-items: center
+      &-wrap
+        input
+          margin-right: 5px
+        label
+          color: $main_white
+          margin-bottom: 0
+      a
+        color: $main_white
+
+.logistic-calc
+  width: 956px
+  max-width: 100%
+  &-cont
+    padding: 20px
+    padding-bottom: 0
+    display: flex
+    justify-content: space-between
+    &-main
+      width: 685px
+      display: flex
+      flex-direction: column
+      &-first
+        display: flex
+        width: 100%
+        justify-content: space-between
+        margin-bottom: 20px
+        &-title
+          width: 120px
+          p
+            font-size: 16px
+            margin: 0
+            padding: 0
+        &-wrap
+          width: 551px
+          display: flex
+          flex-wrap: wrap
+          justify-content: space-between
+          background: $main_white
+          padding: 15px
+          border-radius: $br-radius
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+          &-item
+            display: flex
+            margin-bottom: 10px
+            h5
+              text-align: center
+              font-size: 12px
+              color: $main_bgD
+              margin: 0
+              padding: 0
+              margin-bottom: 5px
+            &:nth-child(1)
+              width: 211px
+              .logistic-calc-cont-main-first-wrap-item-sub
+                display: flex
+                input
+                  text-align: center
+                  box-sizing: border-box
+                  max-width: 100%
+                  margin: 0
+                  padding: 5px
+                  font-size: 12px
+                  width: 86px
+                  border: 1px solid $main_bg3
+                  border-radius: 0 $br-radius $br-radius 0
+                p
+                  border-radius: $br-radius 0 0 $br-radius
+                  box-sizing: border-box
+                  width: 125px
+                  margin: 0
+                  padding: 8px
+                  font-size: 12px
+                  background: $main_bg3
+                  display: flex
+                  justify-content: space-around
+            &:nth-child(2)
+              width: 103px
+              .logistic-calc-cont-main-first-wrap-item-sub
+                width: 100%
+                input
+                  text-align: center
+                  border: 1px solid $main_bg3
+                  display: block
+                  width: 100%
+                  border-radius: $br-radius
+                  margin: 0
+                  padding: 5px
+                  font-size: 12px
+                  background: $main_bg3
+                  display: flex
+                  justify-content: space-around
+            &:nth-child(3)
+              width: 115px
+              .logistic-calc-cont-main-first-wrap-item-sub
+                width: 100%
+                p
+                  display: block
+                  width: 100%
+                  border-radius: $br-radius
+                  margin: 0
+                  padding: 8px
+                  font-size: 12px
+                  background: $main_bg3
+                  display: flex
+                  justify-content: space-around
+            &:nth-child(4), &:nth-child(8)
+              .logistic-calc-cont-main-first-wrap-item-sub
+                display: flex
+                justify-content: center
+                align-items: flex-end
+                a
+                  padding: 8px
+                  font-size: 12px
+                  color: $main_rgb
+                  text-decoration: underline
+            &:nth-child(5)
+              width: 211px
+              .logistic-calc-cont-main-first-wrap-item-sub
+                width: 100%
+                input
+                  border: 1px solid $main_bg3
+                  display: block
+                  width: 100%
+                  border-radius: $br-radius
+                  margin: 0
+                  padding: 5px
+                  font-size: 12px
+                  background: $main_bg3
+                  display: flex
+                  justify-content: space-around
+            &:nth-child(6)
+              width: 103px
+              .logistic-calc-cont-main-first-wrap-item-sub
+                width: 100%
+                input
+                  text-align: center
+                  border: 1px solid $main_bg3
+                  display: block
+                  width: 100%
+                  border-radius: $br-radius
+                  margin: 0
+                  padding: 5px
+                  font-size: 12px
+                  background: $main_bg3
+                  display: flex
+                  justify-content: space-around
+            &:nth-child(7)
+              width: 115px
+              .logistic-calc-cont-main-first-wrap-item-sub
+                width: 100%
+                p
+                  display: block
+                  width: 100%
+                  border-radius: $br-radius
+                  margin: 0
+                  padding: 8px
+                  font-size: 12px
+                  background: $main_bg3
+                  display: flex
+                  justify-content: space-around
+            &:nth-child(9)
+              width: 211px
+              .logistic-calc-cont-main-first-wrap-item-sub
+                display: flex
+                justify-content: center
+                align-items: flex-end
+                a
+                  padding: 8px 8px 8px 0
+                  font-size: 12px
+                  color: $main_rgb
+                  text-decoration: underline
+                  img
+                    margin-right: 3px
+            &:nth-child(10)
+              width: 265px
+              .logistic-calc-cont-main-first-wrap-item-sub
+                display: flex
+                justify-content: center
+                align-items: flex-end
+                p
+                  font-size: 11px
+                  width: 100%
+                  text-align: center
+                  padding: 0
+                  margin: 0
+            &:nth-child(11)
+              .logistic-calc-cont-main-first-wrap-item-sub
+                display: flex
+                justify-content: center
+                align-items: flex-end
+                input
+                  margin-right: 5px
+                label
+                  padding: 0
+                  margin: 0
+                  color: $main_rgb
+      &-logic
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        justify-content: space-between
+        &-wrap
+          width: 551px
+          display: flex
+          flex-wrap: wrap
+          justify-content: space-between
+          background: $main_white
+          padding: 15px
+          border-radius: $br-radius
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+          margin-bottom: 20px
+          position: relative
+          .logic-elips
+            position: absolute
+            right: -10px
+            bottom: -32px
+            z-index: 100
+          &-sity
+            justify-content: space-between
+            display: flex
+            width: 100%
+            margin-bottom: 10px
+            span
+              margin-right: 5px
+              text-transform: uppercase
+              display: flex
+              justify-content: center
+              align-items: center
+              width: 31px
+              height: 31px
+              background: $main_rgb
+              border-radius: 100%
+            input
+              width: 80%
+              padding: 5px
+              border-radius: $br-radius
+              border: 1px solid $main_bg3
+              background: $main_bg3
+            a
+              display: flex
+              justify-content: center
+              align-items: center
+              font-size: 11px
+              color: $main_rgb
+              img
+                margin-right: 3px
+          &-check
+            display: flex
+            flex-direction: column
+            &-inWrap
+              display: flex
+              align-items: center
+              margin-bottom: 10px
+              input
+                margin: 0 5px 0 0
+              label
+                margin: 0
+                padding: 0
+                font-size: 11px
+            p
+              font-size: 11px
+            a
+              font-size: 11px
+              color: $main_rgb
+              text-decoration: underline
+    &-second
+      width: 217px
+      height: 100%
+      background: $main_white
+      padding: 15px
+      border-radius: $br-radius
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      &-wrap
+        &-sity
+          p
+            font-size: 12px
+            position: relative
+            padding: 0
+            margin: 0
+            padding-left: 20px
+            margin-bottom: 10px
+            &:before
+              content: ''
+              position: absolute
+              left: -5px
+              width: 14px
+              height: 14px
+              border: 1px solid $main_bgD
+              border-radius: 100%
+              background: $main_white
+            &:not(:last-child)
+              &:after
+                content: ''
+                position: absolute
+                width: 1px
+                height: 9px
+                left: 1px
+                bottom: -10px
+                background: $main_bgD
+        &-gruz
+          margin-bottom: 10px
+          span
+            display: block
+            color: $main_bgD
+            font-size: 12px
+            margin-bottom: 10px
+        &-type
+          display: flex
+          justify-content: space-between
+          p 
+            margin: 0
+        &-total
+          margin-top: 20px
+          display: flex
+          justify-content: space-between
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            top: -10px
+            width: 100%
+            height: 1px
+            left: 0
+            background: $main_rgb
+        &-time
+          margin-bottom: 10px
+          background: $main_white
+          padding: 5px 10px
+          border-radius: $br-radius
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+          text-align: center
+          span
+            font-size: 10px
+            color: $main_bgD
+          p
+            font-size: 12px
+            margin: 0
+            padding: 0
+        &-btn
+          text-align: center
+          .mainBtn
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            padding: 5px 10px
+            background: $main_rgb
+            color: $main_white
+            display: inline-block
+            text-align: center
+            &:hover
+              color: $main_color
+  @media(max-width: 992px)
+    max-width: 100%
+    padding-bottom: 20px
+    &-cont
+      max-width: 100%
+      flex-direction: column
+      align-items: center
+      &-main
+        width: 100%
+        &-first
+          width: 100% 
+          flex-direction: column
+          align-items: center
+          &-title
+            margin-bottom: 10px
+          &-wrap
+            max-width: 100%
+        &-logic
+          display: flex
+          flex-wrap: wrap
+          width: 100%
+          flex-direction: column
+          align-items: center
+          &-wrap
+            max-width: 100%
+      &-second
+        width: 100%
+        &-wrap
+          display: flex
+          width: 100%
+          flex-wrap: wrap
+          &-sity
+            width: 50%
+            order: 1
+          &-gruz
+            order: 2
+            width: 50%
+          &-time
+            order: 3
+            width: 50%
+            text-align: left
+            box-shadow: none
+            padding: 0
+            span
+              display: block
+              margin-bottom: 10px
+          &-total
+            order: 4
+            width: 50%
+          &-btn
+            width: 100%
+            order: 5
+  @media(max-width: 565px)
+    &-cont
+      &-main
+        &-first
+          &-wrap
+            &-item
+              h5
+                font-size: 10px
+                white-space: nowrap
+              p
+                padding: 8px 2px !important
+              &:nth-child(1)
+                width: 200px
+                .logistic-calc-cont-main-first-wrap-item-sub
+                  p
+                    width: 150px
+                  input
+                    width: 50px
+              &:nth-child(2),&:nth-child(6)
+                width: 70px
+                .logistic-calc-cont-main-first-wrap-item-sub
+                  input
+              &:nth-child(3),&:nth-child(7)
+                width: 70px
+                .logistic-calc-cont-main-first-wrap-item-sub
+              &:nth-child(4),&:nth-child(8)  
+              &:nth-child(5)
+                width: 200px
+  @media(max-width: 478px)
+    &-cont
+      &-main
+        &-first
+          &-wrap
+            padding: 15px 5px
+            &-item
+              h5
+                font-size: 10px
+                white-space: nowrap
+              p
+                padding: 8px 2px !important
+              &:nth-child(1)
+                width: 161px
+                .logistic-calc-cont-main-first-wrap-item-sub
+                  p
+                    width: 101px
+                  input
+                    width: 60px
+              &:nth-child(2),&:nth-child(6)
+                width: 50px
+                .logistic-calc-cont-main-first-wrap-item-sub
+                  input
+              &:nth-child(3),&:nth-child(7)
+                width: 50px
+                .logistic-calc-cont-main-first-wrap-item-sub
+              &:nth-child(4),&:nth-child(8)  
+              &:nth-child(5)
+                width: 161px
+  @media(max-width: 478px)
+    &-cont
+      &-main
+        &-first
+          &-wrap
+            padding: 15px 5px
+            &-item
+              h5
+                font-size: 10px
+                white-space: nowrap
+              p
+                padding: 8px 2px !important
+              &:nth-child(1)
+                width: 161px
+                .logistic-calc-cont-main-first-wrap-item-sub
+                  p
+                    width: 101px
+                  input
+                    width: 60px
+              &:nth-child(2),&:nth-child(6)
+                width: 40px
+                .logistic-calc-cont-main-first-wrap-item-sub
+                  input
+              &:nth-child(3),&:nth-child(7)
+                width: 90px
+                .logistic-calc-cont-main-first-wrap-item-sub
+              &:nth-child(4),&:nth-child(8)  
+                width: 100%
+              &:nth-child(5)
+                width: 161px
+  @media(max-width: 380px)
+    &-cont
+      &-second
+        &-wrap
+          &-sity
+            width: 50%
+            order: 1
+          &-gruz
+            order: 2
+            width: 50%
+            span
+              font-size: 10px
+          &-type
+            p
+              font-size: 12px
+          &-time
+            order: 3
+            width: 50%
+            text-align: left
+            box-shadow: none
+            padding: 0
+            span
+              display: block
+              margin-bottom: 10px
+          &-total
+            order: 4
+            width: 50%
+            p
+              font-size: 12px
+          &-btn
+            width: 100%
+            order: 5
+/* --- forms end ------------------------------------------------*/
+.white-popup-hide
+  display: none
+.mpopup-window-show
+  position: absolute
+  display: block
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 9999

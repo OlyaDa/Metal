@@ -1,0 +1,659 @@
+.mainsearch
+  overflow: unset
+  &-mobile
+    display: none
+    background: $main_bg3
+    text-align: center
+    padding: 0 0 10px 0
+    img
+      width: 30px
+    p
+      padding: 0
+      margin: 0
+  &-cont
+    padding: 30px 0
+    display: flex
+    justify-content: space-between
+    &-settings
+      flex-basis: 20%
+      position: relative
+      overflow: unset
+      &-fixed
+        overflow: unset
+        position: sticky
+        top: 110px
+      &-title
+        h3
+          font-size: 18px
+      &-btn
+        margin-top: 10px
+        text-align: center
+        .reset
+          display: block
+          margin-right: auto
+          border: none
+          background: none
+          font-size: 14px
+          position: relative
+          padding-left: 25px
+          &:after
+            content: ''
+            position: absolute
+            top: 38%
+            left: 0
+            width: 15px
+            height: 3px
+            background: $main_rgb
+            transform: rotate(-45deg)
+          &:before
+            content: ''
+            position: absolute
+            bottom: 44%
+            left: 0
+            width: 15px
+            height: 3px
+            background: $main_rgb
+            transform: rotate(45deg)
+        .mainBtn
+          display: none
+      &-wrap
+        &-item
+          margin-bottom: 3px
+          select
+            border-radius: $br-radius
+            border: 1px solid $main_bg3
+            background: none
+            width: 100%
+            padding: 5px
+            option
+              &:hover
+                background: #000
+          &-desc
+            h4
+              text-transform: uppercase
+              font-size: 14px
+              font-weight: normal
+              margin-bottom: 3px
+          &-inputd
+            display: flex
+            position: relative
+            &:after
+              content: ''
+              position: absolute
+              top: 50%
+              left: 50%
+              transform: translate(-50%, -50%)
+              width: 5px
+              height: 2px
+              background: $main_color
+            input
+              border-radius: $br-radius
+              border: 1px solid $main_bg3
+              background: none
+              padding: 5px
+              width: 45%
+              display: inline-block
+              -moz-appearance: textfield
+              &::-webkit-outer-spin-button
+                -webkit-appearance: none
+                margin: 0
+              &::-webkit-inner-spin-button
+                -webkit-appearance: none
+                margin: 0
+              &:nth-child(1)
+                margin-right: auto
+                margin-left: 0
+              &:nth-child(2)
+                margin-left: auto
+                margin-right: 0
+            ::placeholder
+              color: $main_bg3
+              font-size: 11px
+          &-input
+            input
+              -moz-appearance: textfield
+              border-radius: $br-radius
+              border: 1px solid $main_bg3
+              background: none
+              padding: 5px
+              width: 100%
+            ::placeholder
+              color: $main_bg3
+              font-size: 11px
+    &-result
+      flex-basis: 55%
+      &-filter
+        margin-bottom: 20px
+        select
+          border-radius: $br-radius
+          width: 100%
+          padding: 5px
+          font-size: 12px
+          border: 1px solid $main_bg3
+      .product-hit
+        position: relative
+        background: $main_rgb
+        border: 1px solid $main_color
+        .mainsearch-cont-result-item-count-btn
+          margin-bottom: 15px
+        .mainBtn
+          padding: 6px 13px
+          border: 1px solid $main_color
+        .mainsearch-cont-result-item-count
+          justify-content: space-between
+          align-items: center
+          &:after
+            background: $main_color
+        .mainsearch-cont-result-item-count-price
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+          p
+            text-align: right
+          h4
+            border-radius: $br-radius
+            padding: 5px 10px
+            display: inline-block
+            border: 1px solid $main_color
+        .product-hit-img
+          display: flex
+          justify-content: center
+          align-items: flex-end
+          margin-bottom: 10px
+          p
+            text-transform: lowercase
+            padding: 0
+            font-size: 8px
+            margin: 0 5px 0 0
+            text-transform: uppercase
+          img
+            width: 15px
+            height: auto
+      &-item
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: $br-radius
+        border: 1px solid $main_bg3
+        padding: 10px 0px 10px 20px
+        display: flex
+        justify-content: space-between
+        margin-bottom: 20px
+        &-desc
+          flex-basis: 25%
+          h4
+            margin: 0 0 5px 0
+            padding: 0
+            font-size: 10px
+            font-weight: normal
+          p
+            margin: 0 0 5px 0
+            padding: 0
+            font-size: 18px
+            &:last-child
+              margin: 0
+        &-place
+          flex-basis: 45%
+          display: flex
+          flex-direction: column
+          h4
+            margin: 0 0 5px 0
+            padding: 0
+            font-size: 10px
+            font-weight: normal
+          p
+            margin: 0 0 5px 0
+            padding: 0
+            font-size: 18px
+          &-stars
+            margin-bottom: 10px
+          &-date
+            margin-top: auto
+            p
+              display: inline
+              font-size: 10px
+              &:not(:last-child)
+                margin-right: 5px
+        &-count
+          flex-basis: 30%
+          display: flex
+          justify-content: center
+          align-items: center
+          flex-direction: column
+          text-align: center
+          position: relative
+          padding: 5px
+          &:after
+            content: ''
+            position: absolute
+            left: 0
+            top: 7%
+            width: 1px
+            height: 86%
+            background: $main_bg3
+          &-price
+            text-align: center
+            margin-top: auto
+            padding-right: 3px
+            p
+              font-size: 12px
+              margin-top: auto
+              padding: 0
+              margin-bottom: 5px
+            h4
+              padding-left: 10px
+              font-size: 18px
+          &-btn
+            margin-top: auto
+            margin-bottom: 30px
+      .orders-for-b
+        .product-hit-img
+          justify-content: flex-start
+          img
+            margin-right: 5px
+        .mainsearch-cont-result-item-desc
+          flex-basis: 55%
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          padding: 5px
+          .mainsearch-cont-result-item-place-date
+            margin: 0
+        .mainsearch-cont-result-item-count
+          flex-basis: 45%
+          display: flex
+          justify-content: center
+          align-items: center
+          text-align-last: left
+          .orders-for-b-wrap
+            text-align: left
+            h4
+              margin: 0 0 5px 0
+              padding: 0
+              font-size: 10px
+              font-weight: normal
+            p
+              margin: 0 0 5px 0
+              padding: 0
+              font-size: 18px
+            .mainsearch-cont-result-item-count-btn
+              margin: 0
+              .mainBtn
+                padding: 5px
+                text-align: center
+      &-pagination
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        &-number
+          margin: 5px
+          display: flex
+          &-list
+            .pagination-current
+              border: 1px solid $main_bg3
+              border-radius: $br-radius
+            ul
+              padding: 0
+              margin: 0
+              list-style: none
+              display: flex
+              li
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 30px
+                height: 30px
+                padding: 5px
+                margin-right: 5px
+          &-decore
+            display: flex
+            align-items: start
+            span
+              display: flex
+              justify-content: center
+              align-items: center
+              height: 30px
+              margin-right: 10px
+            p
+              display: flex
+              justify-content: center
+              align-items: center
+              height: 30px
+              margin: 0
+              padding: 0
+              margin-right: 15px
+            img
+              width: 25px
+              height: 30px
+        &-count
+          margin: 5px
+          display: flex
+          justify-content: center
+          align-items: center
+          p
+            margin: 0 5px 0 0
+            padding: 0
+          select
+            padding: 0 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 30px
+            border: 1px solid $main_bg3
+            border-radius: $br-radius
+    &-banner
+      flex-basis: 15%
+      &-wrap
+        margin-bottom: 20px
+        &-wrap.bannerNone
+        @media(max-width: 992px)
+          display: none
+        img
+          max-width: 100%
+          height: auto
+    &-resultTrade
+      flex-basis: 78%
+      &-title
+        ul
+          margin: 0
+          padding: 0
+          list-style: none
+          display: flex
+          background: $main_bgD
+          border-top-left-radius: $br-radius
+          border-top-right-radius: $br-radius
+          li
+            text-align: center
+            color: $main_white
+            font-size: 10px
+            padding: 10px 5px
+            text-transform: uppercase
+            word-break: break-word
+            overflow-wrap: break-word
+            overflow-wrap: anywhere
+            &:nth-child(1)
+              flex-basis: 17.5%
+              border-right: 1px solid $main_white
+            &:nth-child(2)
+              flex-basis: 17.5%
+              border-right: 1px solid $main_white
+            &:nth-child(3)
+              flex-basis: 10%
+              border-right: 1px solid $main_white
+            &:nth-child(4)
+              flex-basis: 17.5%
+              border-right: 1px solid $main_white
+            &:nth-child(5)
+              flex-basis: 10%
+              border-right: 1px solid $main_white
+            &:nth-child(6)
+              flex-basis: 10%
+              border-right: 1px solid $main_white
+            &:nth-child(7)
+              flex-basis: 17.5%
+      &-resList
+        display: block
+        ul
+          margin: 0
+          padding: 0
+          list-style: none
+          display: flex
+          &:nth-child(even)
+            background: $main_bg3
+            li
+              border: none
+          li
+            font-size: 10px
+            padding: 10px 5px
+            text-transform: uppercase
+            word-break: break-word
+            overflow-wrap: break-word
+            overflow-wrap: anywhere
+            border: none
+            &:nth-child(1)
+              text-align: center
+              flex-basis: 17.5%
+              border-left: 1px solid $main_bg3              
+              border-right: 1px solid $main_bgD
+              border-top: 1px solid $main_bg3
+              border-bottom: 1px solid $main_bg3
+            &:nth-child(2)
+              flex-basis: 17.5%
+              border-right: 1px solid $main_bgD
+              border-top: 1px solid $main_bg3
+              border-bottom: 1px solid $main_bg3
+            &:nth-child(3)
+              text-align: center
+              flex-basis: 10%
+              border-right: 1px solid $main_bgD
+              border-top: 1px solid $main_bg3
+              border-bottom: 1px solid $main_bg3
+            &:nth-child(4)
+              flex-basis: 17.5%
+              border-right: 1px solid $main_bgD
+              border-top: 1px solid $main_bg3
+              border-bottom: 1px solid $main_bg3
+            &:nth-child(5)
+              text-align: center
+              flex-basis: 10%
+              border-right: 1px solid $main_bgD
+              border-top: 1px solid $main_bg3
+              border-bottom: 1px solid $main_bg3
+            &:nth-child(6)
+              text-align: center
+              flex-basis: 10%
+              border-right: 1px solid $main_bgD
+              border-top: 1px solid $main_bg3
+              border-bottom: 1px solid $main_bg3
+            &:nth-child(7)
+              text-align: center
+              flex-basis: 17.5%
+              border-top: 1px solid $main_bg3
+              border-bottom: 1px solid $main_bg3
+              border-right: 1px solid $main_bg3
+  .settings-show
+    transform: translateY(0)
+    position: relative
+    transition: 0.3s
+    opacity: 1
+  @media(max-width: 992px)
+    .slick-list
+      height: 100% !important
+    &-mobile
+      display: block
+      background: $main_bgD
+    &-cont
+      padding: 0
+      flex-direction: column
+      overflow: hidden
+      &-settings
+        opacity: 0
+        position: absolute
+        transform: translateY(-400%)
+        padding: 20px
+        flex-basis: 100%
+        background: $main_bg3
+        input, select
+          border: 1px solid $main_color
+        ::placeholder
+          color: $main_color
+      &-result
+        padding: 20px
+        flex-basis: 100%
+        &-filter
+          display: none
+      &-resultTrade
+        padding: 20px
+        flex-basis: 100%
+        // display: flex
+        // flex-wrap: wrap
+        .mainsearch-cont-result-pagination
+          flex-basis: 100%
+          width: 100%
+        &-title
+          width: 30%
+          display: inline-block
+          float: left
+          ul
+            flex-basis: 100%
+            border-radius: 0
+            border: none
+            background: $main_bgD
+            display: block
+            border: 1px solid $main_bgD
+            border-top-left-radius: $br-radius
+            border-bottom-left-radius: $br-radius
+            li
+              flex-basis: auto
+              padding: 10px 5px
+              color: $main_white
+              flex-basis: auto
+              text-align: center
+              display: flex
+              justify-content: center
+              align-items: center
+              border: none !important
+              &:not(:last-child)
+                border-bottom: 1px solid $main_white !important
+        &-resList
+          width: 70%
+          display: inline-block
+          .slick-wrap
+            border-top-right-radius: $br-radius
+            border-bottom-right-radius: $br-radius
+            border-right: 1px solid $main_bg3 !important
+          ul
+            flex-basis: 100%
+            border: none
+            display: block
+            border-top-right-radius: $br-radius
+            border-bottom-right-radius: $br-radius
+            border: 1px solid $main_bg3
+            &:nth-child(even)
+              background: $main_white
+            li
+              flex-basis: auto
+              height: 100%
+              padding: 10px 5px
+              text-align: center
+              display: flex
+              justify-content: center
+              align-items: center
+              border: none !important
+              &:not(:last-child)
+                border-bottom: 1px solid $main_bg3 !important
+      &-banner
+        display: none
+  @media(max-width: 500px)
+    &-cont
+      &-result
+        padding: 5px
+        &-item
+          padding: 5px 5px
+          align-items: center
+          &-desc
+            h4
+              margin-bottom: 5px
+              font-size: 12px
+            p
+              margin-bottom: 5px
+              font-size: 16px
+          &-place
+            flex-basis: 40%
+            h4
+              margin-bottom: 5px
+              font-size: 12px
+            p
+              margin-bottom: 5px
+              font-size: 16px
+            &-stars
+              margin-bottom: 5px
+            &-date
+              p
+                font-size: 10px
+          &-count
+            padding: 5px
+            &:after
+              content: ''
+              position: absolute
+              left: 0
+              top: 10%
+              width: 2px
+              height: 80%
+              background: $main_bg
+            &-price
+              margin-top: auto
+              h4
+                font-size: 18px
+              p
+                margin-top: auto
+                padding: 0
+                margin-bottom: 5px
+            &-btn
+              margin-top: auto
+              margin-bottom: 30px
+              .mainBtn
+                padding: 5px
+        &-pagination
+          &-number
+            &-list
+              .pagination-current
+              ul
+                li
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  width: 25px
+                  height: 25px
+                  padding: 5px
+                  margin-right: 0
+            &-decore
+              span
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 25px
+                margin-right: 0
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 25px
+                margin: 0
+                padding: 0
+                margin-right: 5px
+              p
+                margin-right: 5px
+                width: 25px
+                height: 25px
+              img
+                width: 20px
+                height: 25px
+          &-count
+            margin: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            p
+              font-size: 14px
+              margin: 0 5px 0 0
+              padding: 0
+            select
+              padding: 0 5px
+              display: flex
+              justify-content: center
+              align-items: center
+              height: 30px
+              border: 1px solid $main_bg3
+              border-radius: $br-radius
+    .orders-for-b
+      align-items: stretch
+      .mainsearch-cont-result-item-count
+        align-items: stretch
+        flex-direction: row
+        .orders-for-b-wrap
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          .mainsearch-cont-result-item-count-btn
+            .mainBtn
+              font-size: 12px

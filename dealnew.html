@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="description" CONTENT="description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Title" />
+	<meta property="og:description" content="description" />
+	<meta property="og:image" content="=">
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<link rel="shortcut icon" href="" />
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">	
+	<link rel="stylesheet" href="libs/mpopup/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+<header class="header">
+	<div class="overlay" id="overlay"></div>
+	<nav class="header__nav">
+		<div class="header__nav-title">
+			<h3>Лучшие скидки и акции на тысячи товаров</h3>
+		</div>
+		<!-- /.header__nav-title -->
+		<div class="header__nav-mobile">
+			<div class="header__nav-mobile-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->	
+			<div class="header__nav-mobile-btn">
+				<div class="header__nav-mobile-btn-wrap" id="btnOpen">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- /.header__nav-mobile-btn-wrap -->
+			</div>
+			<!-- /.header__nav-mobile-btn -->
+		</div>
+		<!-- /.header__nav-mobile -->
+		<div class="header__nav-cont global-cont" id="menuList">
+			<div class="header__nav-cont-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->
+			<div class="header__nav-cont-list">
+				<ul>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">Заказы</a></li>
+					<li><a href="#">Торги</a></li>
+					<li><a href="#">Сделки</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-list -->
+			<div class="header__nav-cont-calc">
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/metall.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор металла</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/logistic.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор логистики</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+			</div>
+			<!-- /.header__nav-cont-calc -->
+			<div class="header__nav-cont-user">
+				<div class="header__nav-cont-user-icon">
+					<img src="img/user.png" alt="User">
+				</div>
+				<!-- /.header__nav-cont-user-icon -->
+				<div class="header__nav-cont-user-desc">
+					<div class="header__nav-cont-user-desc-title">
+						<p>Поставщик<br><span>ООО "Северсталь"</span></p>
+					</div>
+					<!-- /.header__nav-cont-user-desc-title -->
+					<div class="header__nav-cont-user-desc-start">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+					</div>
+					<!-- /.header__nav-cont-user-desc-start -->
+				</div>
+				<!-- /.header__nav-cont-user-desc -->
+				<div class="header__nav-cont-user-arrow">
+					<a href="#"><img src="img/arrow-down.png" alt=""></a>
+				</div>
+				<!-- /.header__nav-cont-user-arrow -->
+			</div>
+			<!-- /.header__nav-cont-user -->
+			<div class="header__nav-cont-userinfo">
+				<ul>
+					<li><a href="#">Мой профиль</a></li>
+					<li><a href="#">Мои объявления</a></li>
+					<li><a href="#">Продлить подписку</a></li>
+					<li><a href="#">Сообщения</a><span>1</span></li>
+					<li><a href="#">Выход</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-userinfo -->
+			<div class="header__nav-cont-close" id="btnClose">
+				<span></span>
+				<span></span>
+			</div>
+			<!-- /.header__nav-cont-close -->
+		</div>
+		<!-- /.header__nav-cont -->
+	</nav>
+</header>
+
+<div class="create-deal">
+  <div class="create-deal-cont global-cont">
+    <div class="create-deal-cont-head">
+      <p>создание сделки</p>
+    </div>
+    <!-- /.create-deal-cont-head -->
+    <div class="create-deal-cont-wrap">
+      <div class="create-deal-cont-wrap-steps">
+        <div class="create-deal-cont-wrap-steps-item steps-item">
+          <div class="create-deal-cont-wrap-steps-item-number">
+            <span>1</span>
+          </div>
+          <!-- /.create-deal-cont-wrap-steps-item-number -->
+          <div class="create-deal-cont-wrap-steps-item-text">
+            <p>Формирование сделки</p>
+          </div>
+          <!-- /.create-deal-cont-wrap-steps-item-text -->
+        </div>
+        <!-- /.create-deal-cont-wrap-steps-item -->
+        <div class="create-deal-cont-wrap-steps-item steps-item">
+          <div class="create-deal-cont-wrap-steps-item-number">
+            <span>2</span>
+          </div>
+          <!-- /.create-deal-cont-wrap-steps-item-number -->
+          <div class="create-deal-cont-wrap-steps-item-text">
+            <p>Условия оплаты</p>
+          </div>
+          <!-- /.create-deal-cont-wrap-steps-item-text -->
+        </div>
+        <!-- /.create-deal-cont-wrap-steps-item -->
+        <div class="create-deal-cont-wrap-steps-item steps-item">
+          <div class="create-deal-cont-wrap-steps-item-number">
+            <span>3</span>
+          </div>
+          <!-- /.create-deal-cont-wrap-steps-item-number -->
+          <div class="create-deal-cont-wrap-steps-item-text">
+            <p>Покупатель</p>
+          </div>
+          <!-- /.create-deal-cont-wrap-steps-item-text -->
+        </div>
+        <!-- /.create-deal-cont-wrap-steps-item -->
+        <div class="create-deal-cont-wrap-steps-item steps-item create-deal-cont-wrap-steps-last">
+          <div class="create-deal-cont-wrap-steps-item-number">
+            <span>4</span>
+          </div>
+          <!-- /.create-deal-cont-wrap-steps-item-number -->
+          <div class="create-deal-cont-wrap-steps-item-text">
+            <p>Завершение</p>
+          </div>
+          <!-- /.create-deal-cont-wrap-steps-item-text -->
+        </div>
+        <!-- /.create-deal-cont-wrap-steps-item -->
+      </div>
+      <!-- /.create-deal-cont-wrap-steps -->
+      <div class="create-deal-cont-wrap-main">
+        <form>
+          <div class="create-deal-cont-wrap-main-it main-it">
+            <input type="text" name="it01" placeholder="Наименование товара">
+            <input type="text" name="it02" placeholder="Марка">
+            <input type="text" name="it03" placeholder="Размер">
+            <input type="text" name="it04" placeholder="Примечания">
+						<input type="text" name="it05" placeholder="Количество">
+						<div class="create-deal-cont-wrap-main-it-inc">
+							<label for="fin"><img style="max-width: 23px" src="img/downL.png" alt="pr">Загрузить счет</label>
+							<input id="fin" type="file" name="file">
+						</div>
+						<!-- /.create-deal-cont-wrap-main-it-inc -->
+          </div>
+          <!-- /.create-deal-cont-wrap-main-it -->
+          <div class="create-deal-cont-wrap-main-it main-it">
+            <input type="number" name="it06" placeholder="Наименование товара">
+            <p>Коммиссия MetalGo составит: <span>15000 ₽</span></p>
+						<h3>Кто оплачивает комиссию Безопасной Сделки</h3>
+						<div class="create-deal-cont-wrap-main-it-radio">
+							<input type="radio" id="choice1" name="contact" value="post" checked>
+							<label for="choice1">Поставщик</label>
+						</div>
+						<!-- /.create-deal-cont-wrap-main-it-radio -->
+						<div class="create-deal-cont-wrap-main-it-radio">
+							<input type="radio" id="choice2" name="contact" value="pok">
+              <label for="choice2">Покупатель</label>			
+						</div>
+						<!-- /.create-deal-cont-wrap-main-it-radio -->
+						<div class="create-deal-cont-wrap-main-it-radio">
+							<input type="radio" id="choice3" name="contact" value="50">
+              <label for="choice3">50/50</label>			
+						</div>
+						<!-- /.create-deal-cont-wrap-main-it-radio -->
+          </div>
+          <!-- /.create-deal-cont-wrap-main-it -->
+          <div class="create-deal-cont-wrap-main-it main-it">
+            <input type="text" name="it07" placeholder="Имя покупателя">
+            <input type="text" name="it08" placeholder="Email покупателя">
+          </div>
+          <!-- /.create-deal-cont-wrap-main-it -->
+          <div class="create-deal-cont-wrap-main-it main-it d-flex flex-wrap">
+            <div class="create-deal-cont-wrap-main-it-list">
+              <h5>Поставщик</h5>
+              <p>Наименование</p>
+              <h5>Торговое унитарное предприятие  “Северсталь”</h5>
+							<p>инн</p>
+							3356843457
+							<p>Адрес/контакты</p>
+							<h5>
+								г. Москва, переулок. Краснознаменых 1 пом. 316
+								+7 (809) 303-48-34
+								severstal@mail.ru
+							</h5>
+							<p>Банковские реквизиты</p>
+							<h5>Р/с: BY38 ALFA 3012 2366 8500 1027 0000
+								БИК: ALFABY2X
+								ЗАО "Альфа-Банк" Юридический адрес: Ул. Сурганова, 43-47, 220013 Минск   
+							</h5>
+						</div>
+						<!-- /.create-deal-cont-wrap-main-it-list -->
+						<div class="create-deal-cont-wrap-main-it-list">
+              <h5>Поставщик</h5>
+              <p>Наименование</p>
+              <h5>Торговое унитарное предприятие  “Северсталь”</h5>
+							<p>инн</p>
+							3356843457
+							<p>Адрес/контакты</p>
+							<h5>
+								г. Москва, переулок. Краснознаменых 1 пом. 316
+								+7 (809) 303-48-34
+								severstal@mail.ru
+							</h5>
+							<p>Банковские реквизиты</p>
+							<h5>Р/с: BY38 ALFA 3012 2366 8500 1027 0000
+								БИК: ALFABY2X
+								ЗАО "Альфа-Банк" Юридический адрес: Ул. Сурганова, 43-47, 220013 Минск   
+							</h5>
+						</div>
+						<!-- /.create-deal-cont-wrap-main-it-list -->
+						<div class="create-deal-cont-wrap-main-it-total">
+							<ul>
+								<li>
+									<p>Наименование</p>
+									<h5>Арматура</h5>
+								</li>
+								<li>
+									<p>марка</p>
+									<h5>а400</h5>
+								</li>
+								<li>
+									<p>Размер</p>
+									<h5>8</h5>
+								</li>
+								<li>
+									<p>примечания</p>
+									<h5>ГОСТ 32901-2014</h5>
+								</li>
+								<li>
+									<p>кол-во</p>
+									<h5>12 тонн</h5>
+								</li>
+								<li>
+									<p>счет</p>
+									<h5><a href="#">Просмотр<img style="max-width: 23px" src="img/downL.png" alt="pr"></a></h5>
+								</li>
+								<li>
+									<p>Цена</p>
+									<h5>116000 ₽</h5>
+								</li>
+								<li>
+									<p>КОМИССИЯ</p>
+									<h5>15000 ₽</h5>
+								</li>
+							</ul>
+						</div>
+						<!-- /.create-deal-cont-wrap-main-it-total -->
+          </div>
+          <!-- /.create-deal-cont-wrap-main-it -->
+          <div class="create-deal-cont-wrap-main-btn">
+            <button type="button" class="mainBtn btn-m-prev">Назад</button>
+            <button type="button" class="mainBtn btn-m-next">Отправить</button>
+          </div>
+          <!-- /.create-deal-cont-wrap-main-btn -->
+        </form>
+      </div>
+      <!-- /.create-deal-cont-wrap-main -->
+    </div>
+		<!-- /.create-deal-cont-wrap -->
+  </div>
+	<!-- /.create-deal-cont -->
+	<div class="global-cont">
+		<div class="mydeal__banner">
+      <img src="img/bannerMyDeal.png" alt="Новая сделка">
+    </div>
+    <!-- /.mydeal__banner -->
+	</div>
+	<!-- /.global-cont -->
+</div>
+<!-- /.create-deal -->
+
+<footer class="footer">
+	<div class="footer__cont global-cont">
+		<div class="footer__cont-list">
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">заказы</a></li>
+					<li><a href="#">Торги</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+			<div class="footer__cont-list-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.footer__cont-list-logo -->
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Сделки</a></li>
+					<li><a href="#">Тарифы</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+		</div>
+		<!-- /.footer__cont-list -->
+		<div class="footer__cont-social">
+			<a href="#"><img src="img/logo_instagram.png" alt=""></a>
+			<a href="#"><img src="img/logo_vk.png" alt=""></a>
+			<a href="#"><img src="img/logo_youtube1.png" alt=""></a>
+		</div>
+		<!-- /.footer__cont-social -->
+	</div>
+	<!-- /.footer__cont -->
+	<div class="footer__bankIcon">
+		<a href="#"><img class="visa" src="img/visa.png" alt=""></a>
+		<a href="#"><img class="mastercard" src="img/mastercard.png" alt=""></a>
+		<a href="#"><img class="tinkoff" src="img/Tinkoff.png" alt=""></a>
+	</div>
+	<!-- /.footer__bankIcon -->
+	<div class="footer__copyright">
+		<ul>
+			<li>© 2020 Все права защищены</li>
+			<li><a href="#">Публичная оферта</a></li>
+			<li><a href="#">Правила пользования</a></li>
+			<li><a href="#">ООО "PMP Tech" ИНН 2048290</a></li>
+		</ul>
+	</div>
+	<!-- /.footer__copyright -->
+</footer>
+
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/mpopup/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+*
+	box-sizing: border-box	
+body
+	background: $main_white
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 94px 0 0 0 
+	line-height: 1
+	height: 100%
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+
+section
+	overflow: hidden
+	
+input, select 
+	font-size: 14px	
+select
+	&:focus
+		border-color: $main_rgb
+		box-shadow: 0 0 0 0.2rem rgba($main_rgb,.25)
+.overlay
+	position: fixed
+	width: 100%
+	height: 100%
+	background: rgba($main_color, .7)
+	z-index: 99
+	transition: .4s
+	transform: translateX(300%)
+.global-cont
+	max-width: 80%
+	margin-left: auto
+	margin-right: auto
+	// @media(max-width: 1440px)
+	// 	max-width: 1280px
+	// @media(max-width: 1280px)
+	// 	max-width: 1100px
+	// @media(max-width: 1100px)
+	// 	max-width: 992px
+@media(max-width: 992px)
+	body
+		padding: 82px 0 0 0 
+	.global-cont
+		max-width: 100%
+
+
+.mainpage-header  
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+	margin-bottom: 60px
+	&:after
+		position: absolute
+		content: ''
+		width: 246px
+		height: 1px
+		bottom: -30px
+		left: 50%
+		transform: translateX(-50%)
+		background: $main_rgb
+	&-cont
+		position: relative
+		img
+			max-width: 100%
+			height: auto
+		h3
+			font-size: 24px
+			text-transform: uppercase
+			text-align: center
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 100%
+			transform: translate(-50%, -50%)
+			span
+				color: $main_rgb
+

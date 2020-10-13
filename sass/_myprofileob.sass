@@ -1,0 +1,230 @@
+
+.myprofileob
+  padding: 20px 0
+  .global-cont
+    background: $main_bg3
+    border-radius: $br-radius
+    padding-bottom: 5px
+  &__title
+    margin-bottom: 10px
+    h3
+      text-transform: uppercase
+      font-size: 14px
+      color: $main_rgb
+      margin: 0
+      padding: 0
+      background: $main_color
+      padding: 10px
+      border-top-left-radius: $br-radius
+      border-top-right-radius: $br-radius
+      border-left: 16px solid $main_rgb
+  &__desc
+    padding: 0 16px
+    margin-bottom: 20px
+    p
+      font-size: 14px
+      padding: 0
+      margin: 0
+      line-height: 1.2
+  &__tabs
+    padding: 0 20px
+    margin-bottom: 15px
+    .active-cont
+      display: block
+    .active-list
+      color: $main_white
+      transition: .3s
+    &-list
+      ul
+        list-style: none
+        margin: 0
+        padding: 0
+        display: flex
+        cursor: pointer
+        li
+          display: inline-block
+          font-size: 14px
+          text-transform: uppercase
+          padding: 10px
+          background: $main_bgD
+          border: 1px solid $main_color
+          transition: .3s
+          &:first-child
+            border-top-left-radius: 5px
+          &:last-child
+            border-top-right-radius: 5px
+    &-cont
+      padding: 15px 10px
+      border: 1px solid $main_color
+      border-radius: 0px 5px 5px 5px
+      display: none
+      background: $main_white
+      &-control
+        display: none
+      &-title
+        border-bottom: 1px solid $main_rgb
+        padding: 0 10px 10px 10px
+        margin-bottom: 10px
+        ul
+          list-style: none
+          margin: 0
+          padding: 0
+          display: flex
+          justify-content: space-between
+          li
+            word-break: break-word
+            text-align: center
+            flex-basis: 10%
+            color: $main_colorD
+            font-size: 14px
+      &-text.prolonguser
+        ul
+          align-items: center
+      &-text
+        padding: 0 15px
+        .mainBtnB
+          padding: 5px
+          display: block
+        ul
+          list-style: none
+          margin: 0
+          padding: 5px
+          display: flex
+          justify-content: space-between
+          li
+            word-break: break-word
+            text-align: center
+            flex-basis: 10%
+            font-size: 14px
+          &:nth-child(odd)
+            background: $main_bg3
+  &__btn
+    padding: 0 20px
+    text-align: right
+    margin-bottom: 10px
+    .mainBtnB
+      text-transform: uppercase
+      font-size: 14px
+      display: inline-block
+  &__banner
+    img
+      width: 100%
+      height: auto
+  @media(max-width: 992px)
+    padding: 20px 10px
+    &__title
+      margin-bottom: 10px
+      h3
+        font-size: 14px
+    &__desc
+      margin-bottom: 15px
+      p
+        font-size: 14px
+        line-height: 1.4
+    &__tabs
+      &-list
+        ul
+          li
+            text-align: center
+            font-size: 16px
+            flex-basis: 50%
+      &-cont
+        border-top-right-radius: 0
+        border-bottom-right-radius: 0
+        border-bottom-left-radius: 0
+        padding: 0
+        &-control
+          padding: 5px
+          display: flex
+          justify-content: space-around
+          border: 1px solid $main_color
+          border-bottom-right-radius: $br-radius
+          border-bottom-left-radius: $br-radius
+        &-title
+          margin: 0
+          padding: 0
+          flex-basis: 50%
+          width: 50%
+          border: none
+          ul
+            padding: 0
+            margin: 0
+            flex-direction: column
+            background: $main_bgD
+            li
+              padding: 5px
+              display: flex
+              justify-content: center
+              flex-basis: 25%
+              font-size: 10px
+              color: $main_white
+              border-top: 1px solid $main_white
+              &:last-child
+                display: none
+        &-text.prolonguser
+          ul
+            align-items: stretch
+        &-text
+          flex-basis: 50%
+          width: 50%
+          padding: 0
+          ul
+            padding: 0
+            margin: 0
+            flex-direction: column
+            li
+              padding: 5px
+              background: $main_white
+              display: flex
+              justify-content: center
+              flex-basis: 25%
+              font-size: 12px
+              border-top: 1px solid $main_color
+              &:last-child
+                display: none
+      .active-cont
+        display: flex
+    &__btn
+      margin-bottom: 20px
+      .mainBtn
+        font-size: 12px
+  @media (max-width: 1416px)
+    &__tabs
+      &-cont
+        &-text
+          ul
+            li
+              flex-basis: 12%
+
+  @media (max-width: 1416px)
+    &__tabs
+      &-cont
+        &-title
+          ul
+            li
+              flex-basis: 12%
+
+  @media (max-width: 1220px)
+    &__tabs
+      &-cont
+        &-title
+          ul
+            li
+              font-size: 12px
+
+  @media (max-width: 1063px)
+    &__tabs
+      &-cont
+        &-title
+          ul
+            li
+              font-size: 12px
+
+  @media (max-width: 350px)
+    &__tabs
+      &-cont
+        &-text
+          ul
+            li
+              font-size: 10px
+

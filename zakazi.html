@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="description" CONTENT="description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Title" />
+	<meta property="og:description" content="description" />
+	<meta property="og:image" content="=">
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<link rel="shortcut icon" href="" />
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">	
+<link rel="stylesheet" href="libs/mpopup/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+<header class="header">
+	<div class="overlay" id="overlay"></div>
+	<nav class="header__nav">
+		<div class="header__nav-title">
+			<h3>Лучшие скидки и акции на тысячи товаров</h3>
+		</div>
+		<!-- /.header__nav-title -->
+		<div class="header__nav-mobile">
+			<div class="header__nav-mobile-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->	
+			<div class="header__nav-mobile-btn">
+				<div class="header__nav-mobile-btn-wrap" id="btnOpen">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- /.header__nav-mobile-btn-wrap -->
+			</div>
+			<!-- /.header__nav-mobile-btn -->
+		</div>
+		<!-- /.header__nav-mobile -->
+		<div class="header__nav-cont global-cont" id="menuList">
+			<div class="header__nav-cont-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->
+			<div class="header__nav-cont-list">
+				<ul>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">Заказы</a></li>
+					<li><a href="#">Торги</a></li>
+					<li><a href="#">Сделки</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-list -->
+			<div class="header__nav-cont-calc">
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/metall.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор металла</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/logistic.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор логистики</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+			</div>
+			<!-- /.header__nav-cont-calc -->
+			<div class="header__nav-cont-user">
+				<div class="header__nav-cont-user-icon">
+					<img src="img/user.png" alt="User">
+				</div>
+				<!-- /.header__nav-cont-user-icon -->
+				<div class="header__nav-cont-user-desc">
+					<div class="header__nav-cont-user-desc-title">
+						<p>Поставщик<br><span>ООО "Северсталь"</span></p>
+					</div>
+					<!-- /.header__nav-cont-user-desc-title -->
+					<div class="header__nav-cont-user-desc-start">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+					</div>
+					<!-- /.header__nav-cont-user-desc-start -->
+				</div>
+				<!-- /.header__nav-cont-user-desc -->
+				<div class="header__nav-cont-user-arrow">
+					<a href="#"><img src="img/arrow-down.png" alt=""></a>
+				</div>
+				<!-- /.header__nav-cont-user-arrow -->
+			</div>
+			<!-- /.header__nav-cont-user -->
+			<div class="header__nav-cont-userinfo">
+				<ul>
+					<li><a href="#">Мой профиль</a></li>
+					<li><a href="#">Мои объявления</a></li>
+					<li><a href="#">Продлить подписку</a></li>
+					<li><a href="#">Сообщения</a><span>1</span></li>
+					<li><a href="#">Выход</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-userinfo -->
+			<div class="header__nav-cont-close" id="btnClose">
+				<span></span>
+				<span></span>
+			</div>
+			<!-- /.header__nav-cont-close -->
+		</div>
+		<!-- /.header__nav-cont -->
+	</nav>
+</header>
+
+<section class="offer">
+	<div class="offer__cont global-cont">
+		<div class="offer__cont-title">
+			<h3>заявки покупателей</h3>
+		</div>
+		<!-- /.offer__cont-title -->
+		<div class="offer__cont-input">
+			<label for="offer-find"><img class="lupa" src="img/lupa.png" alt=""></label>
+			<input type="text" placeholder="Начните вводить наименование или параметры металла, который хотите найти в заказах" id="offer-find">
+		</div>
+		<!-- /.offer__cont-input -->
+	</div>
+	<!-- /.offer__cont -->
+</section>
+
+<section class="mainsearch">
+	<div class="mainsearch-mobile" id="mSearch">
+		<img src="img/arrow-down.png" alt="Параметры поиска">
+		<p>Параметры поиска</p>
+	</div>
+	<!-- /.mainsearch-mobile -->
+	<div class="mainsearch-cont global-cont">
+		<div class="mainsearch-cont-settings" id="settingsm">
+			<div class="mainsearch-cont-settings-fixed">
+				<div class="mainsearch-cont-settings-title">
+					<h3>Параметры поиска</h3>
+				</div>
+				<!-- /.mainsearch-cont-settings-title -->
+				<form class="mainsearch-cont-settings-wrap">
+					<div class="mainsearch-cont-settings-wrap-item">
+						<select name="category" id="category">
+							<option value="Категонии" disabled selected>Категории</option>
+							<option value="opt01">opt01</option>
+							<option value="opt02">opt02</option>
+							<option value="opt03">opt03</option>
+						</select>
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item -->
+					<div class="mainsearch-cont-settings-wrap-item">
+						<div class="mainsearch-cont-settings-wrap-item-desc">
+							<h4>Город</h4>
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+						<div class="mainsearch-cont-settings-wrap-item-input">
+							<input type="text" placeholder="Начните вводить город">
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-input -->
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item -->
+					<div class="mainsearch-cont-settings-wrap-item">
+						<div class="mainsearch-cont-settings-wrap-item-desc">
+							<h4>покупатель</h4>
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+						<div class="mainsearch-cont-settings-wrap-item-input">
+							<input type="text" placeholder="Начните вводить имя поставщика">
+						</div>
+						<!-- /.mainsearch-cont-settings-wrap-item-input -->
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item -->
+				</form>
+				<!-- /.mainsearch-cont-settings-wrap -->
+				<div class="mainsearch-cont-settings-btn">
+					<button class="reset">
+						Сбросить
+					</button>
+					<button class="mainBtn" id="settingsBtn">
+						Применить
+					</button>
+				</div>
+				<!-- /.mainsearch-cont-settings-btn -->
+			</div>
+		</div>
+		<!-- /.mainsearch-cont-settings -->
+		<div class="mainsearch-cont-result">
+			<div class="mainsearch-cont-result-filter">
+				<select name="category" id="category" class="selectpicker">
+					<option value="hightLevel" >Сперва с самым высоким рейтингом</option>
+					<option value="opt01">opt01</option>
+					<option value="opt02">opt02</option>
+					<option value="opt03">opt03</option>
+				</select>
+			</div>
+			<!-- /.mainsearch-cont-result-filter -->
+			<div class="mainsearch-cont-result-item orders-for-b">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>заказ</h4>
+					<p>Куплю металл</p>
+					<h4>заявка</h4>
+					<p>Труба ВГП ДУ 15 (1/2 дюйма) имеет наружный диаметр 21,3 мм...</p>
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-count">
+          <div class="orders-for-b-wrap">
+            <h4>город</h4>
+            <p>Москва</p>
+            <h4>поставщик</h4>
+            <p>ООО "Северсталь"</p>
+            <h4>рейтинг поставщика</h4>
+            <div class="mainsearch-cont-result-item-place-stars">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+            </div>
+            <div class="mainsearch-cont-result-item-count-btn">
+              <button class="mainBtn">
+                посмотреть заявку
+              </button>
+            </div>
+            <!-- /.mainsearch-cont-result-item-count-btn -->
+          </div>
+          <!-- /.orders-for-b-wrap -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item orders-for-b product-hit">
+				<div class="mainsearch-cont-result-item-desc">
+          <div class="product-hit-img">
+            <img src="img/hit.png" alt="Hit">
+            <p>Выгодное предложение</p>
+          </div>
+					<h4>заказ</h4>
+					<p>Куплю металл</p>
+					<h4>заявка</h4>
+					<p>Труба ВГП ДУ 15 (1/2 дюйма) имеет наружный диаметр 21,3 мм...</p>
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-count">
+          <div class="orders-for-b-wrap">
+            <h4>город</h4>
+            <p>Москва</p>
+            <h4>поставщик</h4>
+            <p>ООО "Северсталь"</p>
+            <h4>рейтинг поставщика</h4>
+            <div class="mainsearch-cont-result-item-place-stars">
+              <img src="img/StarW.svg" alt="">
+              <img src="img/StarW.svg" alt="">
+              <img src="img/StarW.svg" alt="">
+              <img src="img/StarW.svg" alt="">
+              <img src="img/StarW.svg" alt="">
+            </div>
+            <div class="mainsearch-cont-result-item-count-btn">
+              <button class="mainBtn">
+                посмотреть заявку
+              </button>
+            </div>
+            <!-- /.mainsearch-cont-result-item-count-btn -->
+          </div>
+          <!-- /.orders-for-b-wrap -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+      <!-- /.mainsearch-cont-result-item -->
+      <div class="mainsearch-cont-result-item orders-for-b">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>заказ</h4>
+					<p>Куплю металл</p>
+					<h4>заявка</h4>
+					<p>Труба ВГП ДУ 15 (1/2 дюйма) имеет наружный диаметр 21,3 мм...</p>
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-count">
+          <div class="orders-for-b-wrap">
+            <h4>город</h4>
+            <p>Москва</p>
+            <h4>поставщик</h4>
+            <p>ООО "Северсталь"</p>
+            <h4>рейтинг поставщика</h4>
+            <div class="mainsearch-cont-result-item-place-stars">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+            </div>
+            <div class="mainsearch-cont-result-item-count-btn">
+              <button class="mainBtn">
+                посмотреть заявку
+              </button>
+            </div>
+            <!-- /.mainsearch-cont-result-item-count-btn -->
+          </div>
+          <!-- /.orders-for-b-wrap -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+      <!-- /.mainsearch-cont-result-item -->
+      <div class="mainsearch-cont-result-item orders-for-b">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>заказ</h4>
+					<p>Куплю металл</p>
+					<h4>заявка</h4>
+					<p>Труба ВГП ДУ 15 (1/2 дюйма) имеет наружный диаметр 21,3 мм...</p>
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-count">
+          <div class="orders-for-b-wrap">
+            <h4>город</h4>
+            <p>Москва</p>
+            <h4>поставщик</h4>
+            <p>ООО "Северсталь"</p>
+            <h4>рейтинг поставщика</h4>
+            <div class="mainsearch-cont-result-item-place-stars">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+            </div>
+            <div class="mainsearch-cont-result-item-count-btn">
+              <button class="mainBtn">
+                посмотреть заявку
+              </button>
+            </div>
+            <!-- /.mainsearch-cont-result-item-count-btn -->
+          </div>
+          <!-- /.orders-for-b-wrap -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+      <!-- /.mainsearch-cont-result-item -->
+      <div class="mainsearch-cont-result-item orders-for-b">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>заказ</h4>
+					<p>Куплю металл</p>
+					<h4>заявка</h4>
+					<p>Труба ВГП ДУ 15 (1/2 дюйма) имеет наружный диаметр 21,3 мм...</p>
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-count">
+          <div class="orders-for-b-wrap">
+            <h4>город</h4>
+            <p>Москва</p>
+            <h4>поставщик</h4>
+            <p>ООО "Северсталь"</p>
+            <h4>рейтинг поставщика</h4>
+            <div class="mainsearch-cont-result-item-place-stars">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+            </div>
+            <div class="mainsearch-cont-result-item-count-btn">
+              <button class="mainBtn">
+                посмотреть заявку
+              </button>
+            </div>
+            <!-- /.mainsearch-cont-result-item-count-btn -->
+          </div>
+          <!-- /.orders-for-b-wrap -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+      <!-- /.mainsearch-cont-result-item -->
+      <div class="mainsearch-cont-result-item orders-for-b product-hit">
+				<div class="mainsearch-cont-result-item-desc">
+          <div class="product-hit-img">
+            <img src="img/hit.png" alt="Hit">
+            <p>Выгодное предложение</p>
+          </div>
+					<h4>заказ</h4>
+					<p>Куплю металл</p>
+					<h4>заявка</h4>
+					<p>Труба ВГП ДУ 15 (1/2 дюйма) имеет наружный диаметр 21,3 мм...</p>
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-count">
+          <div class="orders-for-b-wrap">
+            <h4>город</h4>
+            <p>Москва</p>
+            <h4>поставщик</h4>
+            <p>ООО "Северсталь"</p>
+            <h4>рейтинг поставщика</h4>
+            <div class="mainsearch-cont-result-item-place-stars">
+              <img src="img/StarW.svg" alt="">
+              <img src="img/StarW.svg" alt="">
+              <img src="img/StarW.svg" alt="">
+              <img src="img/StarW.svg" alt="">
+              <img src="img/StarW.svg" alt="">
+            </div>
+            <div class="mainsearch-cont-result-item-count-btn">
+              <button class="mainBtn">
+                посмотреть заявку
+              </button>
+            </div>
+            <!-- /.mainsearch-cont-result-item-count-btn -->
+          </div>
+          <!-- /.orders-for-b-wrap -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+      <!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-pagination">
+				<div class="mainsearch-cont-result-pagination-number">
+					<div class="mainsearch-cont-result-pagination-number-list">
+						<ul>
+							<li class="pagination-current">1</li>
+							<li>2</li>
+							<li>3</li>
+						</ul>
+					</div>
+					<!-- /.mainsearch-cont-result-pagination-number-list -->
+					<div class="mainsearch-cont-result-pagination-number-decore">
+						<span>...</span>
+						<p>100</p>
+						<img src="img/right-arrow.svg" alt="right">
+					</div>
+					<!-- /.mainsearch-cont-result-pagination-number-decore -->
+				</div>
+				<!-- /.mainsearch-cont-result-pagination-number -->
+				<div class="mainsearch-cont-result-pagination-count">
+					<p>Показывать по:</p>
+					<select name="numberShow" id="numberShow">
+						<option value="10" selected>10</option>
+						<option value="20">20</option>
+						<option value="30">30</option>
+						<option value="40">40</option>
+					</select>
+				</div>
+				<!-- /.mainsearch-cont-result-pagination-number-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-pagination -->
+		</div>
+		<!-- /.mainsearch-cont-result -->
+		<div class="mainsearch-cont-banner">
+			<div class="mainsearch-cont-banner-wrap">
+				<img src="img/banner-right.png" alt="bn">
+			</div>
+			<!-- /.mainsearch-cont-banner-wrap -->
+			<div class="mainsearch-cont-banner-wrap">
+				<img src="img/banner-right.png" alt="bn">
+			</div>
+			<!-- /.mainsearch-cont-banner-wrap -->
+		</div>
+		<!-- /.mainsearch-cont-banner -->
+	</div>
+	<!-- /.mainsearch-cont -->
+</section>
+
+<footer class="footer">
+	<div class="footer__cont global-cont">
+		<div class="footer__cont-list">
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">заказы</a></li>
+					<li><a href="#">Торги</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+			<div class="footer__cont-list-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.footer__cont-list-logo -->
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Сделки</a></li>
+					<li><a href="#">Тарифы</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+		</div>
+		<!-- /.footer__cont-list -->
+		<div class="footer__cont-social">
+			<a href="#"><img src="img/logo_instagram.png" alt=""></a>
+			<a href="#"><img src="img/logo_vk.png" alt=""></a>
+			<a href="#"><img src="img/logo_youtube1.png" alt=""></a>
+		</div>
+		<!-- /.footer__cont-social -->
+	</div>
+	<!-- /.footer__cont -->
+	<div class="footer__bankIcon">
+		<a href="#"><img class="visa" src="img/visa.png" alt=""></a>
+		<a href="#"><img class="mastercard" src="img/mastercard.png" alt=""></a>
+		<a href="#"><img class="tinkoff" src="img/Tinkoff.png" alt=""></a>
+	</div>
+	<!-- /.footer__bankIcon -->
+	<div class="footer__copyright">
+		<ul>
+			<li>© 2020 Все права защищены</li>
+			<li><a href="#">Публичная оферта</a></li>
+			<li><a href="#">Правила пользования</a></li>
+			<li><a href="#">ООО "PMP Tech" ИНН 2048290</a></li>
+		</ul>
+	</div>
+	<!-- /.footer__copyright -->
+</footer>
+
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/mpopup/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -3279,6 +3279,24 @@ img.mfp-img {
   transform: translateY(-50%);
 }
 
+@media (max-width: 992px) {
+  .create-deal-cont-wrap-main-it-star-sneed-p {
+    left: 4px;
+  }
+}
+
+@media(max-width: 530px) {
+  .create-deal-cont-wrap-main-it-star-sneed-p {
+    bottom: 20px;
+  }
+}
+
+@media(max-width: 321px) {
+  .create-deal-cont-wrap-main-it-star-sneed-p {
+    bottom: 32px;
+  }
+}
+
 .create-deal-cont-wrap-main-it-star-morIn {
   position: absolute;
   right: -35px;

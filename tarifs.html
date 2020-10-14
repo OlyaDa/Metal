@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="description" CONTENT="description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Title" />
+	<meta property="og:description" content="description" />
+	<meta property="og:image" content="=">
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<link rel="shortcut icon" href="" />
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">	
+	<link rel="stylesheet" href="libs/mpopup/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+<header class="header">
+	<div class="overlay" id="overlay"></div>
+	<nav class="header__nav">
+		<div class="header__nav-title">
+			<h3>Лучшие скидки и акции на тысячи товаров</h3>
+		</div>
+		<!-- /.header__nav-title -->
+		<div class="header__nav-mobile">
+			<div class="header__nav-mobile-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->	
+			<div class="header__nav-mobile-btn">
+				<div class="header__nav-mobile-btn-wrap" id="btnOpen">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- /.header__nav-mobile-btn-wrap -->
+			</div>
+			<!-- /.header__nav-mobile-btn -->
+		</div>
+		<!-- /.header__nav-mobile -->
+		<div class="header__nav-cont global-cont" id="menuList">
+			<div class="header__nav-cont-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.header__nav-cont-logo -->
+			<div class="header__nav-cont-list">
+				<ul>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">Заказы</a></li>
+					<li><a href="#">Торги</a></li>
+					<li><a href="#">Сделки</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-list -->
+			<div class="header__nav-cont-calc">
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/metall.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор металла</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+				<div class="header__nav-cont-calc-wrap">
+					<div class="header__nav-cont-calc-wrap-img">
+						<a href="#"><img src="img/logistic.png" alt="Калькулятор"></a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-img -->
+					<div class="header__nav-cont-calc-wrap-desc">
+						<a href="#">Калькулятор логистики</a>
+					</div>
+					<!-- /.header__nav-cont-calc-wrap-desc -->
+				</div>
+				<!-- /.header__nav-cont-calc-wrap -->
+			</div>
+			<!-- /.header__nav-cont-calc -->
+			<div class="header__nav-cont-user">
+				<div class="header__nav-cont-user-icon">
+					<img src="img/user.png" alt="User">
+				</div>
+				<!-- /.header__nav-cont-user-icon -->
+				<div class="header__nav-cont-user-desc">
+					<div class="header__nav-cont-user-desc-title">
+						<p>Поставщик<br><span>ООО "Северсталь"</span></p>
+					</div>
+					<!-- /.header__nav-cont-user-desc-title -->
+					<div class="header__nav-cont-user-desc-start">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+						<img src="img/Star.svg" alt="star">
+					</div>
+					<!-- /.header__nav-cont-user-desc-start -->
+				</div>
+				<!-- /.header__nav-cont-user-desc -->
+				<div class="header__nav-cont-user-arrow">
+					<a href="#"><img src="img/arrow-down.png" alt=""></a>
+				</div>
+				<!-- /.header__nav-cont-user-arrow -->
+			</div>
+			<!-- /.header__nav-cont-user -->
+			<div class="header__nav-cont-userinfo">
+				<ul>
+					<li><a href="#">Мой профиль</a></li>
+					<li><a href="#">Мои объявления</a></li>
+					<li><a href="#">Продлить подписку</a></li>
+					<li><a href="#">Сообщения</a><span>1</span></li>
+					<li><a href="#">Выход</a></li>
+				</ul>
+			</div>
+			<!-- /.header__nav-cont-userinfo -->
+			<div class="header__nav-cont-close" id="btnClose">
+				<span></span>
+				<span></span>
+			</div>
+			<!-- /.header__nav-cont-close -->
+		</div>
+		<!-- /.header__nav-cont -->
+	</nav>
+</header>
+
+<section class="tarrifs">
+  <div class="tarrifs-cont global-cont">
+    <div class="tarrifs-cont-head">
+      <p>Тарифы</p>
+    </div>
+    <!-- /.tarrifs-cont-head -->
+    <div class="tarrifs-cont-tabs-list tabs-list">
+      <ul>
+        <li>поставщику</li>
+        <li>покупателю</li>
+        <li>дополнительные услуги</li>
+      </ul>
+    </div>
+    <!-- /.tarrifs-cont-titleList -->
+    <div class="tarrifs-cont-tabs">
+      <div class="tarrifs-cont-tabs-wrap tabs-cont">
+        <div class="tarrifs-cont-tabs-wrap-item border-left">
+          <h5>1 месяц</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+        <div class="tarrifs-cont-tabs-wrap-item wrap-item-active">
+          <h5>3 месяца</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+        <div class="tarrifs-cont-tabs-wrap-item border-right">
+          <h5>6 месяцев</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+      </div>
+      <!-- /.tarrifs-cont-tabs -->
+      <div class="tarrifs-cont-tabs-wrap tabs-cont">
+        <div class="tarrifs-cont-tabs-wrap-item border-left">
+          <h5>1 месяц</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+        <div class="tarrifs-cont-tabs-wrap-item wrap-item-active">
+          <h5>3 месяца!!</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+        <div class="tarrifs-cont-tabs-wrap-item border-right">
+          <h5>6 месяцев</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+      </div>
+      <!-- /.tarrifs-cont-tabs -->
+      <div class="tarrifs-cont-tabs-wrap tabs-cont">
+        <div class="tarrifs-cont-tabs-wrap-item border-left">
+          <h5>1 месяц</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+        <div class="tarrifs-cont-tabs-wrap-item wrap-item-active">
+          <h5>3 месяца</h5>
+          <h3>15000 ₽</h3>
+          <h2>0 ₽</h2>
+          <ul>
+            <li>- доступ к Заказам;</li>
+            <li>- доступ к Поиску;</li>
+            <li>- доступ к Торгам;</li>
+            <li>- бесплатное размещение объявлений и заявок</li>
+          </ul>
+          <a href="#0" class="mainBtnB">Подключиться</a>
+        </div>
+        <!-- /.tarrifs-cont-tabs-wrap-item -->
+      </div>
+      <!-- /.tarrifs-cont-tabs -->
+    </div>
+    <!-- /.tarrifs-cont-tabs -->
+  </div>
+  <!-- /.tarrifs-cont -->
+</section>
+
+<footer class="footer">
+	<div class="footer__cont global-cont">
+		<div class="footer__cont-list">
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">заказы</a></li>
+					<li><a href="#">Торги</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+			<div class="footer__cont-list-logo">
+				<img src="img/logoIn.png" alt="">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<!-- /.footer__cont-list-logo -->
+			<div class="footer__cont-list-wrap">
+				<ul>
+					<li><a href="#">Сделки</a></li>
+					<li><a href="#">Тарифы</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- /.footer__cont-list-wrap -->
+		</div>
+		<!-- /.footer__cont-list -->
+		<div class="footer__cont-social">
+			<a href="#"><img src="img/logo_instagram.png" alt=""></a>
+			<a href="#"><img src="img/logo_vk.png" alt=""></a>
+			<a href="#"><img src="img/logo_youtube1.png" alt=""></a>
+		</div>
+		<!-- /.footer__cont-social -->
+	</div>
+	<!-- /.footer__cont -->
+	<div class="footer__bankIcon">
+		<a href="#"><img class="visa" src="img/visa.png" alt=""></a>
+		<a href="#"><img class="mastercard" src="img/mastercard.png" alt=""></a>
+		<a href="#"><img class="tinkoff" src="img/Tinkoff.png" alt=""></a>
+	</div>
+	<!-- /.footer__bankIcon -->
+	<div class="footer__copyright">
+		<ul>
+			<li>© 2020 Все права защищены</li>
+			<li><a href="#">Публичная оферта</a></li>
+			<li><a href="#">Правила пользования</a></li>
+			<li><a href="#">ООО "PMP Tech" ИНН 2048290</a></li>
+		</ul>
+	</div>
+	<!-- /.footer__copyright -->
+</footer>
+
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/mpopup/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

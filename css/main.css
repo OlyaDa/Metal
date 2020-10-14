@@ -6917,3 +6917,8 @@ img.mfp-img {
 }
 /*# sourceMappingURL=main.css.map */
 
+@media (max-width: 992px) {
+  .hideList {
+    display: none !important;
+  }
+}

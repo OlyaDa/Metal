@@ -1235,13 +1235,12 @@ select:focus {
       border-radius: 5px;
       border-left: 16px solid #edb021; }
   .mydeal__desc {
-    padding-left: 16px;
     margin-bottom: 20px; }
     .mydeal__desc p {
       font-size: 14px;
       padding: 0;
       margin: 0;
-      line-height: 1.4; }
+      line-height: 1.6; }
   .mydeal__tabs {
     margin-bottom: 15px; }
     .mydeal__tabs .active-cont {
@@ -1922,13 +1921,13 @@ select:focus {
             background: none;
             transition: 0.3s; }
         .create-deal-cont-wrap-main-it-list {
-          flex-basis: 50%;
+          flex-basis: 48%;
           position: relative; }
           .create-deal-cont-wrap-main-it-list-line {
             position: absolute;
             width: 1px;
             height: 100%;
-            right: 1%;
+            right: -0.5%;
             background-color: #000; }
           .create-deal-cont-wrap-main-it-list h5 {
             margin: 0 0 10px 0;
@@ -1973,7 +1972,7 @@ select:focus {
         display: flex;
         justify-content: flex-end; }
         .create-deal-cont-wrap-main-btn button {
-          margin: 5px;
+          margin: 10px 5px;
           border: 1px solid #000000;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
           .create-deal-cont-wrap-main-btn button:nth-child(2) {
@@ -2216,6 +2215,9 @@ select:focus {
 @media(max-width: 321px) {
   .create-deal-cont-wrap-main-it-star-sneed-p {
     bottom: 32px; } }
+.create-deal-cont-wrap-main-it-list-mr {
+  margin-right: 15px; }
+
 .usermap {
   padding: 20px 0; }
   .usermap-cont {

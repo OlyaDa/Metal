@@ -2209,7 +2209,7 @@ img.mfp-img {
 }
 
 .mydeal__desc {
-  padding-left: 16px;
+  /*padding-left: 16px;*/
   margin-bottom: 20px;
 }
 
@@ -2217,7 +2217,7 @@ img.mfp-img {
   font-size: 14px;
   padding: 0;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .mydeal__tabs {
@@ -2362,7 +2362,7 @@ img.mfp-img {
   }
   .mydeal__desc p {
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.6;
   }
   .mydeal__tabs-list ul li {
     text-align: center;
@@ -2666,7 +2666,7 @@ img.mfp-img {
 
 .searchs__offer-msg form label, .searchs__offer-msg form button {
   border: 1px solid #000000;
-  padding: 5px;
+  padding: 10px 5px;
   border-radius: 5px;
   background: none;
   -webkit-transition: .3s;
@@ -3376,8 +3376,8 @@ img.mfp-img {
 }
 
 .create-deal-cont-wrap-main-it-list {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
     position: relative;
 }
 
@@ -3385,8 +3385,12 @@ img.mfp-img {
     position: absolute;
     width: 1px;
     height: 100%;
-    right: 1%;
+    right: -0.5%;
     background-color: #000;
+}
+
+.create-deal-cont-wrap-main-it-list-mr {
+margin-right: 15px;
 }
 
 .create-deal-cont-wrap-main-it-list h5 {

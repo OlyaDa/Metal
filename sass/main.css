@@ -1237,6 +1237,7 @@ select:focus {
   .mydeal__desc {
     margin-bottom: 20px; }
     .mydeal__desc p {
+      text-align: justify;
       font-size: 14px;
       padding: 0;
       margin: 0;

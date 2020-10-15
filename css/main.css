@@ -6916,6 +6916,17 @@ img.mfp-img {
   z-index: 9999;
 }
 /*# sourceMappingURL=main.css.map */
+.hideList:hover, .showList:hover {
+  background-color: #acabab !important;
+}
+
+.mydeal__tabs-cont-text ul:hover {
+  background-color: #acabab !important;
+}
+
+.mainsearch-cont-resultTrade-resList ul:hover {
+    background-color: #acabab !important;
+}
 
 @media (max-width: 992px) {
   .hideList {

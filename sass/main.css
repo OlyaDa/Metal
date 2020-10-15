@@ -130,6 +130,9 @@ select:focus {
 @media (max-width: 992px) {
   .hideList {
     display: none !important; } }
+.hideList:hover, .showList:hover {
+  background-color: #acabab !important; }
+
 .header {
   background: #000;
   position: fixed;
@@ -861,6 +864,8 @@ select:focus {
           padding: 0;
           list-style: none;
           display: flex; }
+          .mainsearch-cont-resultTrade-resList ul:hover {
+            background-color: #acabab !important; }
           .mainsearch-cont-resultTrade-resList ul:nth-child(even) {
             background: #dcdcdc; }
             .mainsearch-cont-resultTrade-resList ul:nth-child(even) li {
@@ -1293,6 +1298,8 @@ select:focus {
           padding: 5px;
           display: flex;
           justify-content: space-between; }
+          .mydeal__tabs-cont-text ul:hover {
+            background-color: #acabab !important; }
           .mydeal__tabs-cont-text ul li {
             text-align: center;
             flex-basis: 10%;

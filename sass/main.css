@@ -154,11 +154,8 @@ select:focus {
     display: flex;
     justify-content: space-between;
     position: relative; }
-    .header__nav-cont-logo {
-      display: flex;
-      justify-content: center; }
-      .header__nav-cont-logo img:first-child {
-        margin-right: 16px; }
+    .header__nav-cont-logo img:first-child {
+      margin-right: 16px; }
     .header__nav-cont-list ul {
       padding: 0;
       margin: 0;
@@ -1244,7 +1241,7 @@ select:focus {
       font-size: 14px;
       padding: 0;
       margin: 0;
-      line-height: 1.2; }
+      line-height: 1.4; }
   .mydeal__tabs {
     margin-bottom: 15px; }
     .mydeal__tabs .active-cont {
@@ -1925,15 +1922,23 @@ select:focus {
             background: none;
             transition: 0.3s; }
         .create-deal-cont-wrap-main-it-list {
-          flex-basis: 50%; }
+          flex-basis: 50%;
+          position: relative; }
+          .create-deal-cont-wrap-main-it-list-line {
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            right: 1%;
+            background-color: #000; }
           .create-deal-cont-wrap-main-it-list h5 {
-            margin: 0 0 5px 0;
+            margin: 0 0 10px 0;
             padding: 0;
             font-size: 14px; }
           .create-deal-cont-wrap-main-it-list p {
-            margin: 0 0 5px 0;
+            margin: 0 0 10px 0;
             padding: 0;
-            font-size: 12px; }
+            font-size: 12px;
+            color: gray; }
         .create-deal-cont-wrap-main-it-total {
           flex-basis: 100%; }
           .create-deal-cont-wrap-main-it-total ul {
@@ -2886,6 +2891,9 @@ select:focus {
       margin-bottom: 10px;
       padding: 10px;
       position: relative; }
+      .help-cont-qv-items p {
+        font-size: 15px;
+        white-space: 4px; }
       .help-cont-qv-items-icon {
         position: absolute;
         top: 10px;
@@ -3151,9 +3159,11 @@ select:focus {
         margin-bottom: 10px; }
         .fast-serch-cont-item-img img {
           max-width: 100%;
-          height: auto; }
+          height: auto;
+          min-height: 152px; }
       .fast-serch-cont-item-title {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        min-height: 57px; }
         .fast-serch-cont-item-title h4 {
           margin: 0;
           padding: 0;
@@ -3272,6 +3282,11 @@ select:focus {
     .tarrifs.mainpage .tarrifs-cont-head p {
       color: #000000;
       font-size: 24px; }
+
+.logoin {
+  height: auto;
+  width: 48px;
+  margin-top: 3px; }
 
 /* --- button start Start ------------------------------------------------ */
 .mainBtn {

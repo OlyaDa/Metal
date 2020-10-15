@@ -233,14 +233,22 @@
                 transition: .3s
           &-list
             flex-basis: 50%
+            position: relative
+            &-line
+              position: absolute
+              width: 1px
+              height: 100%
+              right: 1%
+              background-color: #000
             h5
-              margin: 0 0 5px 0
+              margin: 0 0 10px 0
               padding: 0
               font-size: 14px
             p
-              margin: 0 0 5px 0
+              margin: 0 0 10px 0
               padding: 0
               font-size: 12px
+              color: gray
           &-total
             flex-basis: 100%
             ul

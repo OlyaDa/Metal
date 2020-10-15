@@ -2218,6 +2218,9 @@ select:focus {
 .create-deal-cont-wrap-main-it-list-mr {
   margin-right: 15px; }
 
+.main-h5 {
+  font-weight: 900; }
+
 .usermap {
   padding: 20px 0; }
   .usermap-cont {

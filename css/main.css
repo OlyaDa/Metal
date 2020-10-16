@@ -6991,3 +6991,92 @@ margin-right: 15px;
 .main-h5 {
   font-weight: 900;
 }
+
+.text-title-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /*border: 1px solid #000000;*/
+  /*border-radius: 0px 0px 5px 5px;*/
+}
+
+.myprofileob__tabs-cont-mob {
+ border: 1px solid #dcdcdc;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.text-title-list {
+  border: 1px solid #000000;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.ul-title {
+  width: 50%;
+  background: #969696;
+  margin: 0;
+  padding: 0;
+}
+
+.ul-title li {
+  list-style: none;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  padding: 6px 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+}
+
+.ul-text {
+  width: 50%;
+  background: #dcdcdc;
+  margin: 0;
+  padding: 0;
+}
+
+.ul-text li {
+  list-style: none;
+  display: flex;
+  padding: 5px 0;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 12px;
+  border-top: 1px solid #969696;
+}
+
+.text-title-list-icons {
+  border-top: 2px solid;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  background: #dcdcdc;
+  /*border: 1px solid #000000;*/
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.text-title-list.showList:hover {
+  background: transparent !important;
+}
+
+.text-title-list .showList:hover {
+  background: transparent !important;
+}
+
+.how-cont-item-icon {
+  
+}

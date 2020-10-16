@@ -7054,6 +7054,7 @@ margin-right: 15px;
   justify-content: center;
   font-size: 12px;
   border-top: 1px solid #969696;
+  text-align: center;
 }
 
 .text-title-list-icons {
@@ -7077,6 +7078,7 @@ margin-right: 15px;
   background: transparent !important;
 }
 
-.how-cont-item-icon {
-  
+.ul-btn {
+  text-align: center;
+  background: #dcdcdc;
 }

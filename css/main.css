@@ -4101,6 +4101,20 @@ margin-right: 15px;
   margin-bottom: 15px;
 }
 
+.myprofileob__tabs-mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .myprofileob__tabs {
+    display: none;
+  }
+
+  .myprofileob__tabs-mobile {
+    display: block;
+  }
+}
+
 .myprofileob__tabs .active-cont {
   display: block;
 }

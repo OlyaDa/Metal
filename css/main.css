@@ -7082,3 +7082,15 @@ margin-right: 15px;
   text-align: center;
   background: #dcdcdc;
 }
+
+@media (max-width: 992px) {
+  .bid {
+    padding: 12px !important;
+  }
+}
+
+@media (max-width: 388px) {
+  .bid {
+    padding: 18px !important;
+  }
+}

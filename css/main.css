@@ -5029,6 +5029,7 @@ margin-right: 15px;
 .help-cont-qv-items p {
     font-size: 15px;
     word-spacing: 4px;
+    text-align: justify;
 }
 
 .help-cont-qv-items h4 {
@@ -5547,6 +5548,7 @@ margin-right: 15px;
 
 .how-cont-item-title {
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .how-cont-item-title h4 {
@@ -5558,7 +5560,7 @@ margin-right: 15px;
 }
 
 .how-cont-item-text p {
-  margin: 0;
+  margin: 11px;
   padding: 0;
   font-size: 18px;
 }

@@ -2904,7 +2904,8 @@ select:focus {
       position: relative; }
       .help-cont-qv-items p {
         font-size: 15px;
-        white-space: 4px; }
+        white-space: 4px;
+        text-align: justify; }
       .help-cont-qv-items-icon {
         position: absolute;
         top: 10px;

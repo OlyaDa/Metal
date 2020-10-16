@@ -1235,6 +1235,8 @@ select:focus {
       border-radius: 5px;
       border-left: 16px solid #edb021; }
   .mydeal__desc {
+    padding-left: 16px;
+    padding-right: 16px;
     margin-bottom: 20px; }
     .mydeal__desc p {
       text-align: justify;

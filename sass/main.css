@@ -1924,6 +1924,9 @@ select:focus {
         .create-deal-cont-wrap-main-it-list {
           flex-basis: 48%;
           position: relative; }
+@media(max-width: 992px) {
+  .create-deal-cont-wrap-main-it-list {
+    flex-basis: 47%; } }
           .create-deal-cont-wrap-main-it-list-line {
             position: absolute;
             width: 1px;

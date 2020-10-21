@@ -291,7 +291,8 @@ select:focus {
 @media(max-width: 992px) {
   .header .open-menu {
     transform: translateX(0);
-    transition: 0; }
+    transition: 0;
+    border-radius: 0 0 0 5px; }
   .header__nav {
     overflow: hidden; }
     .header__nav-mobile {
@@ -447,7 +448,7 @@ select:focus {
       padding-right: 60px; }
     .offer__cont-input ::placeholder {
       font-size: 13px;
-      color: #000000; }
+      color: gray; }
     .offer__cont-input label {
       border-radius: 5px;
       background: #edb021;
@@ -1235,8 +1236,6 @@ select:focus {
       border-radius: 5px;
       border-left: 16px solid #edb021; }
   .mydeal__desc {
-    padding-left: 16px;
-    padding-right: 16px;
     margin-bottom: 20px; }
     .mydeal__desc p {
       text-align: justify;
@@ -2856,6 +2855,8 @@ select:focus {
             padding: 0; }
           .contacts-cont-wrap-item-desc-text a {
             display: block; }
+            .contacts-cont-wrap-item-desc-text a-tel {
+              margin-bottom: 7px; }
         .contacts-cont-wrap-item-social {
           padding: 20px 0 0 0;
           text-align: center;
@@ -3240,7 +3241,7 @@ select:focus {
         margin-left: auto;
         margin-right: auto; }
       .how-cont-item-title {
-        margin-bottom: 10px; }
+        margin-bottom: 5px; }
         .how-cont-item-title h4 {
           margin: 0;
           padding: 0;
@@ -3250,7 +3251,7 @@ select:focus {
       .how-cont-item-text p {
         margin: 0;
         padding: 0;
-        font-size: 18px; }
+        font-size: 16px; }
     .how-cont:after {
       z-index: -1;
       position: absolute;

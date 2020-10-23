@@ -5288,6 +5288,7 @@ margin-right: 15px;
     position: relative;
     z-index: 1;
     text-align-last: center;
+    margin: 10px 0;
   }
   .offer.mainpage .offer__cont-select:after {
     position: absolute;
